@@ -1,3 +1,29 @@
+<?php 
+    include'config.php';
+    session_start();
+    error_reporting(0);
+
+    if(isset($_SESSION['username'])){
+        header("Location: dashboard_student.php");
+    }
+
+    if(isset($_POST['submit'])){
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM users WHERE email ='$email' AND password = '$password'";
+    $result = mysqli_query($conn, $sql);
+    if($result-> num_rows > 0){
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION['username'] = $row['username'];
+        header("Location: dashboard_student.php");
+    } else {
+        echo "<script>alert('Email or Password is wrong!')</script>";
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,25 +37,21 @@
 <body>
     <main>
         <div class="navbar">
-         
             <nav>
                 <ul>
                     <li><a href="#"><img src="img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="loginform">
             <h2>MU2WIL LOGIN</h2>
-
-            <form action="#" method="post">
-            <label>Email: <input type="email" name="name"></label><br>
-            <label>Password: <input type="password" name="pword"></label><br>
-            <input type="submit">
+            <form action="" method="post">
+            <label>Email: <input type="email" name="email"></label><br>
+            <label>Password: <input type="password" name="password"></label><br>
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember-me">Keep me signed in</label>
+            <button name="submit" class="btn">Login</button>
         </form> 
         </div>
     </main>
