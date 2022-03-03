@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/dashboardstudent.css">
+        <link rel="stylesheet" href="/css/dashboardstudent.css">
     <header>
         <title>Welcome to Mu2WIL</title>
     </header>
@@ -13,7 +13,7 @@
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="#"><img src="img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
+                    <li><a href="#"><img src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
                     <li><a href="#">Job Opportunities</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
