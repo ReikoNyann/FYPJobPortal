@@ -16,47 +16,40 @@ ul{
 }
 
 li{
-    display: inline;
     padding: 10px;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-}
 
 img{
     width: 250px;
     height:auto;
 }
 
-.loginform{
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    height: 300px;
-    width: 400px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
+.chooselogin{
     font-size: 18px;
+    width: 40%;
+    margin-left: 30%;
+    padding: 10px;
+    text-align: center;
 }
-label{
+.chooselogin ul{
     display: block;
-    padding: 5px;
+    background-color: grey;
+    border-radius: 20px;    
 }
-input[type=email], input[type=password]{
-    padding: 5px;
-    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
-    border-radius: 10px;
-}
-button{
-    border-radius: 10px;
-    background-color: red;
+.chooselogin a{
+    text-decoration: none;
     color: white;
-    font-size: 15px;
+    display: block;
+    padding: 12px;
+    border-radius: 20px; 
 }
-
+.chooselogin ul a:hover{
+    background-color: red;
+}
+h2{
+    font-size: 30px;
+}
 footer{
     display: block;
     margin: 0%;
