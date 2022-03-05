@@ -1,8 +1,5 @@
 # FYPJobPortal
 
-=================
-2022-03-05 (Boon)
-=================
 Websites - https://bpsim.synology.me/audrey_mu2Wil/FYPJobPortal/index.php
 
 All webpages created; each webpages separated with three sections (includes/header.php, includes/footer.php & own webpage) - login.php is a single section page (currently have problem to login)
