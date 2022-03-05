@@ -19,12 +19,8 @@ if(isset($_POST['submit']))
 $_SESSION['userstatus']=$row->UserStatus;
 $usertype=$row->UserType;
 ?>
-<?php /* 
-Login page previous was succefully implemeted, however after add some coding, it stopped heading to dashboard page. 
-Please fix if possible. (Boon)
+<?php /* CHecking User Status to prevent checkin.
 
-
-====Checking User Status to prevent inactive user login. Function not working yet. =====
 if($_SESSION['userstatus']==1){
   if($_SESSION['userstatus']==0){
      echo "<script>alert('Sorry, your account is inactive. If you are newly register user, please wait for our administrator review.')</script>";
@@ -35,10 +31,7 @@ if($_SESSION['userstatus']==1){
  else if ($_SESSION['userstatus']==3){
      echo "<script>alert('Your account have been banned or deleted. Please contact us if you believe it is a mistake.')</script>";
  }}
- else 
- ===================================================
- 
- */ ?><?php
+ else */ ?><?php
 
 $_SESSION['userid']=$row->UserID;
 $_SESSION['username']=$row->UserName;
