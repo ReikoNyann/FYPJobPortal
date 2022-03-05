@@ -36,13 +36,11 @@
 
 <body>
     <main>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
-                </ul>
-            </nav>
+    <div class="menu">
+        <div class="murdoch">
+            <a href="#"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
         </div>
+    </div>
 
         <div class="loginform">
             <h2>MU2WIL LOGIN</h2>
@@ -51,6 +49,8 @@
             <label>Email: <input type="email" name="email"></label><br>
             <label>Password: <input type="password" name="password"></label><br>
             <label><input type="checkbox" name="remember" id="remember">Remember Me</label>
+            <p><a href="/reset.php">Forget Password?</a></p>
+            <p>Are you a new employer looking to offer WIL offers? <a href="/register.php">Sign Up</a></p>
             <button name="submit" class="btn">Login</button>
         </form> 
         </div>
