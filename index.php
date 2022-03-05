@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 session_start();
 include('includes/config.php');
@@ -9,6 +10,16 @@ error_reporting(0);
 <html>
 
 <head>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/main.css">
+    <header>
+        <title>Welcome to Mu2WIL</title>
+    </header>
+    </head>
+>>>>>>> e91d9537eac637e74e6eabaf35f1db540da2581a
 
 <meta charset="utf-8">
 <title>Welcome to MU2WIL</title>
@@ -79,6 +90,7 @@ error_reporting(0);
         
         </div>
 
+<<<<<<< HEAD
 
 
 
@@ -89,3 +101,20 @@ error_reporting(0);
   <!--FOOTER START--> 
   <?php include_once('includes/footer.php');?>
   <!--FOOTER END--> 
+=======
+        <div class="chooselogin">
+            <h2>MU2WIL PORTAL</h2>
+            <h3>Please select your user type</h3>
+            <ul>
+                <li><a href="/student/login.php">Current Murdoch Student</a></li>
+                <li><a href="/employer/login.php">Employers</a></li>
+                <li><a href="/admin/login.php">Administrators</a></li>
+            </ul>
+        </div>
+    </main>
+        <footer>
+            <p>Copyright 2022, Team Yuen Yuen</p>
+        </footer>
+    </body>
+</html>
+>>>>>>> e91d9537eac637e74e6eabaf35f1db540da2581a

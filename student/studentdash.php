@@ -7,6 +7,7 @@ error_reporting(0);
 <!doctype html>
 
 <html>
+<<<<<<< HEAD
 
 <head>
 
@@ -89,3 +90,44 @@ error_reporting(0);
   <!--FOOTER START--> 
   <?php include_once('includes/footer.php');?>
   <!--FOOTER END--> 
+=======
+    <head>
+        <link rel="stylesheet" href="/css/navbar.css">
+        <link rel="stylesheet" href="/css/studentdash.css">
+    <header>
+        <title>Welcome to Mu2WIL</title>
+    </header>
+    </head>
+
+<body>
+    <main>
+        <div class="logo">
+            <a href="/student/studentdash.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar">
+            <a href="/jobopportunities.php">Job Opportunities</a>
+            <a href="/contact.php">Contact Us</a>
+            <div class="dropdown">
+                <button class="droplist">USER
+                    <i class="togglelist"></i>
+                </button>
+                <div class="contentlist">
+                    <a href="/student/profile.php">View Profile</a>
+                    <a href="/student//application.php">View Applications</a>
+                    <a href="/logout.php">Logout</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dash">
+            Insert dashboard stuff here, things needed: <br>
+            1) Welcome user<br>
+            2) recent jobs posted
+        </div>
+    </main>
+        <footer>
+            <p>Copyright 2022, Team Yuen Yuen</p>
+        </footer>
+    </body>
+</html>
+>>>>>>> e91d9537eac637e74e6eabaf35f1db540da2581a

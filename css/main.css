@@ -1,0 +1,71 @@
+body{
+    max-width: 1280px;
+    margin: auto;
+    padding: auto;
+    
+}
+
+.navbar{
+    background-color: black;
+    padding: 2px;
+    margin: auto;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li{
+    padding: 10px;
+    display: inline;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+img{
+    width: 250px;
+    height:auto;
+}
+.chooselogin{
+    font-size: 18px;
+    width: 45%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.chooselogin ul{
+    display: block;
+    background-color: grey;
+    border-radius: 20px;    
+}
+.chooselogin a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 12px;
+    border-radius: 20px; 
+}
+.chooselogin ul a:hover{
+    background-color: red;
+}
+h2{
+    font-size: 30px;
+}
+footer{
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 1px;
+
+}
+
