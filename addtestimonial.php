@@ -11,7 +11,7 @@ error_reporting(0);
 <head>
 
 <meta charset="utf-8">
-<title>View Applicant || MU2WIL</title>
+<title>Add Testimonial || MU2WIL</title>
 
 <!--HEADER CSS-->
 
@@ -70,7 +70,7 @@ error_reporting(0);
 
    
         <div class="loginform" >
-            <h2>View Applicant || MU2WIL</h2>
+            <h2>Add Testimonial || MU2WIL</h2>
            
             <label>Our Layout </label><br>
             <label>OR </label><br>

@@ -1,37 +1,91 @@
-<!DOCTYPE html>
+<?php
+session_start();
+include('includes/config.php');
+error_reporting(0);
+
+?>
+<!doctype html>
+
 <html>
-    <head>
-        <link rel="stylesheet" href="/css/dashboardstudent.css">
-    <header>
-        <title>Welcome to Mu2WIL</title>
-    </header>
 
-    </head>
+<head>
 
-<body>
-    <main>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
-                    <li><a href="#">Job Opportunities</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
+<meta charset="utf-8">
+<title>Student Dashboard || MU2WIL</title>
+
+<!--HEADER CSS-->
+
+<link href="css/header.css" rel="stylesheet" type="text/css">
+
+<!--CUSTOM CSS-->
+
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+
+<!--BOOTSTRAP CSS-->
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<!--COLOR CSS-->
+
+<link href="css/color.css" rel="stylesheet" type="text/css">
+
+<!--RESPONSIVE CSS-->
+
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+<!--OWL CAROUSEL CSS-->
+
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+
+<!--FONTAWESOME CSS-->
+
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!--SCROLL FOR SIDEBAR NAVIGATION-->
+
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+<!--GOOGLE FONTS-->
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,700,900' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+  <!--HEADER START--> 
+<?php include_once('includes/header.php');?>
+  <!--HEADER END--> 
+
+   <!--MAIN START--> 
+
+
+   
+        <div class="loginform" >
+            <h2>Student Dashboard || MU2WIL</h2>
+           
+            <label>Our Layout </label><br>
+            <label>OR </label><br>
+            <label>Our Form</label><br>
+            <label>HERE</label><br>
+        
         </div>
-        <div class="bar">
-            <form action="search.php" method="GET">
-                <input type="text" name="query"/>
-                <input type="submit" value="Search"/>
-            </form>
-        </div>
-        <div class="Jobs">
-            
-        </div>
-    </main>
-        <footer>
-            <p>Copyright 2022, Team Yuen Yuen</p>
-            <a href="#">Contact Us</a>
-        </footer>
-    </body>
-</html>
+
+
+
+
+
+        </main>
+
+  <!--MAIN END--> 
+  <!--FOOTER START--> 
+  <?php include_once('includes/footer.php');?>
+  <!--FOOTER END--> 

@@ -1,63 +1,91 @@
-<?php 
-    include'config.php';
-    session_start();
-    error_reporting(0);
-
-    if(isset($_SESSION['username'])){
-        header("Location: student/studentdash.php");
-    }
-
-    if(isset($_POST['submit'])){
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    $sql = "SELECT * FROM users WHERE email ='$email' AND password = '$password'";
-    $result = mysqli_query($conn, $sql);
-    if($result-> num_rows > 0){
-        $row = mysqli_fetch_assoc($result);
-        $_SESSION['username'] = $row['username'];
-        header("Location: student/studentdash.php");
-    } else {
-        echo "<script>alert('Email or Password is wrong!')</script>";
-    }
-}
+<?php
+session_start();
+include('includes/config.php');
+error_reporting(0);
 
 ?>
+<!doctype html>
 
-<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/login.css">
-    <header>
-        <title>Welcome to Mu2WIL</title>
-    </header>
 
-    </head>
+<head>
 
-<body>
-    <main>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
-                </ul>
-            </nav>
+<meta charset="utf-8">
+<title>Welcome to MU2WIL</title>
+
+<!--HEADER CSS-->
+
+<link href="css/header.css" rel="stylesheet" type="text/css">
+
+<!--CUSTOM CSS-->
+
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+
+<!--BOOTSTRAP CSS-->
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<!--COLOR CSS-->
+
+<link href="css/color.css" rel="stylesheet" type="text/css">
+
+<!--RESPONSIVE CSS-->
+
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+<!--OWL CAROUSEL CSS-->
+
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+
+<!--FONTAWESOME CSS-->
+
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!--SCROLL FOR SIDEBAR NAVIGATION-->
+
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+<!--GOOGLE FONTS-->
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,700,900' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+  <!--HEADER START--> 
+<?php include_once('includes/header.php');?>
+  <!--HEADER END--> 
+
+   <!--MAIN START--> 
+
+
+   
+        <div class="loginform" >
+            <h2>HOME PAGE</h2>
+           
+            <label>Our Layout </label><br>
+            <label>OR </label><br>
+            <label>Our Form</label><br>
+            <label>HERE</label><br>
+        
         </div>
 
-        <div class="loginform">
-            <h2>MU2WIL LOGIN</h2>
-            <form action="" method="post">
-            <label>Email: <input type="email" name="email"></label><br>
-            <label>Password: <input type="password" name="password"></label><br>
-            <input type="checkbox" name="remember" id="remember">
-            <label for="remember-me">Keep me signed in</label>
-            <button name="submit" class="btn">Login</button>
-        </form> 
-        </div>
-    </main>
-        <footer>
-            <p>Copyright 2022, Team Yuen Yuen</p>
-            <a href="#">Contact Us</a>
-        </footer>
-    </body>
-</html>
+
+
+
+
+        </main>
+
+  <!--MAIN END--> 
+  <!--FOOTER START--> 
+  <?php include_once('includes/footer.php');?>
+  <!--FOOTER END--> 

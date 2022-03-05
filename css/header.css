@@ -1,5 +1,5 @@
 body{
-    max-width: 1280px;
+    max-width: auto;
     margin: auto;
     padding: auto;
     max-height: auto;
@@ -30,17 +30,20 @@ img{
     height:auto;
 }
 
-.loginform{
+
+
+.loginform, .general-info{
     border-style: solid;
     border-color: red;
     text-align: center;
-    height: 300px;
-    width: 400px;
+    height: 500px;
+    width: 800px;
     margin: 20px auto;
     position: relative;
     font-weight: bold;
     font-size: 18px;
 }
+
 label{
     display: block;
     padding: 5px;

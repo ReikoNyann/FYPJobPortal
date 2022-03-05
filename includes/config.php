@@ -1,8 +1,8 @@
 <?php
 $server = "localhost";
-$user = "root";
-$password = "";
-$database = "mu2wil";
+$user = "mu2wil";
+$password = "mu2Wil@mu2Wil";
+$database = "mu2Wil";
 
 $conn = mysqli_connect($server, $user, $password, $database);
 
