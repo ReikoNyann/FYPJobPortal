@@ -37,28 +37,31 @@
 
 <body>
     <main>
+    <div class="menu">
+        <div class="murdoch">
+            <a href="#"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
+        </div>
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="#"><img src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
+                    <li><a href="#">Job Opportunities</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
-
+    </div>
         <div class="loginform">
             <h2>MU2WIL LOGIN</h2>
             <form action="" method="post">
             <label>Email: <input type="email" name="email"></label><br>
             <label>Password: <input type="password" name="password"></label><br>
-            <input type="checkbox" name="remember" id="remember">
-            <label for="remember-me">Keep me signed in</label>
+            <label><input type="checkbox" name="remember" id="remember">Remember Me</label>
             <button name="submit" class="btn">Login</button>
         </form> 
         </div>
     </main>
         <footer>
             <p>Copyright 2022, Team Yuen Yuen</p>
-            <a href="#">Contact Us</a>
         </footer>
     </body>
 </html>
