@@ -27,7 +27,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="/css/login.css">
     <header>
         <title>Welcome to Mu2WIL</title>
     </header>
@@ -39,12 +39,12 @@
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="#"><img src="img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
+                    <li><a href="#"><img src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="chooselogin">
+        <div class="loginform">
             <h2>MU2WIL LOGIN</h2>
 
             <form action="" method="post">

@@ -4,7 +4,7 @@
     error_reporting(0);
 
     if(isset($_SESSION['username'])){
-        header("Location: dashboard_student.php");
+        header("Location: studentdash.php");
     }
 
     if(isset($_POST['submit'])){
@@ -14,9 +14,10 @@
     $sql = "SELECT * FROM users WHERE email ='$email' AND password = '$password'";
     $result = mysqli_query($conn, $sql);
     if($result-> num_rows > 0){
+        echo "<script>alert('Please wait for 5 secs')</script>";
         $row = mysqli_fetch_assoc($result);
         $_SESSION['username'] = $row['username'];
-        header("Location: dashboard_student.php");
+        header("Location: studentdash.php");
     } else {
         echo "<script>alert('Email or Password is wrong!')</script>";
     }
@@ -27,7 +28,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="/css/login.css">
     <header>
         <title>Welcome to Mu2WIL</title>
     </header>
@@ -39,7 +40,7 @@
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="#"><img src="img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
+                    <li><a href="#"><img src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
                 </ul>
             </nav>
         </div>

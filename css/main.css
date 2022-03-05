@@ -2,35 +2,44 @@ body{
     max-width: 1280px;
     margin: auto;
     padding: auto;
-    max-height: auto;
+    
 }
 
 .navbar{
-    background-color: black;   
+    background-color: black;
+    padding: 2px;
+    margin: auto;
 }
 
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 
 li{
     padding: 10px;
+    display: inline;
+    
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 
 img{
     width: 250px;
     height:auto;
 }
-
 .chooselogin{
     font-size: 18px;
-    width: 40%;
-    margin-left: 30%;
+    width: 45%;
+    margin: auto;
     padding: 10px;
     text-align: center;
+    justify-content: center;
 }
 .chooselogin ul{
     display: block;
@@ -51,22 +60,12 @@ h2{
     font-size: 30px;
 }
 footer{
-    display: block;
-    margin: 0%;
-    padding: 1px 0px 2px 0px;
-    background-color: black;
-    height: 45px;
-    position: relative;
-}
-p{
-    color: white;
+    justify-content: center;
     text-align: center;
-    
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 1px;
+
 }
 
-footer a{
-    float: right;
-    color: white;
-    margin: -32px 10px 0px 0px;
-    text-decoration: none;
-}
