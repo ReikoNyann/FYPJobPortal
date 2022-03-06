@@ -1,0 +1,87 @@
+body{
+    max-width: 1280px;
+    margin: auto;
+    padding: auto;
+    max-height: auto;
+    position: relative;
+    padding-bottom: 0px; /*58px*/
+    min-height: 100vh;
+}
+
+.navbar{
+    background-color: black;   
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    padding: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+img{
+    width: 250px;
+    height:auto;
+}
+
+.resetpasswordform{
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    margin: 20px auto;
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+}
+label{
+    display: block;
+    padding: 5px;
+    float: left;
+}
+input[type=email], input[type=password]{
+    padding: 5px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+}
+
+footer{
+    display: block;
+    margin: 0%;
+    padding: 1px 0px 2px 0px;
+    background-color: black;
+    height: 45px;
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+p{
+    color: white;
+    text-align: center;
+    
+}
+
+footer a{
+    float: right;
+    color: white;
+    margin: -32px 10px 0px 0px;
+    text-decoration: none;
+    flex: 0 0 auto
+}
