@@ -8,20 +8,8 @@ body{
     min-height: 100vh;
 }
 
-.menu{
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 .navbar{
-    background-color: black;
-    float:right;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 300px;
-    visibility: hidden;
-    
+    background-color: black;   
 }
 
 ul{
@@ -35,24 +23,17 @@ li{
     padding: 10px;
 }
 
-.navbar a{
+a{
     color: white;
     text-decoration: none;
-    margin: 10px;
-    padding: 10px;
 }
 
-.navbar a:hover{
-    background-color: red;
-}
-.murdoch{
-    margin: 10px;
+img{
+    width: 250px;
     height:auto;
-    float: left;
-    padding: 0;
 }
 
-.loginform{
+.signupform{
     border-style: solid;
     border-color: red;
     text-align: center;
@@ -85,7 +66,10 @@ footer{
     padding: 1px 0px 2px 0px;
     background-color: black;
     height: 45px;
-    position: relative;
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 p{
     color: white;
@@ -98,4 +82,5 @@ footer a{
     color: white;
     margin: -32px 10px 0px 0px;
     text-decoration: none;
+    flex: 0 0 auto
 }
