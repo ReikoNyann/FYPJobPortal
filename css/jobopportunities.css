@@ -1,0 +1,97 @@
+body{
+    max-width: 1280px;
+    margin: auto;
+    padding: auto;
+    max-height: auto;
+    position: relative;
+    padding-bottom: 0px; /*58px*/
+    min-height: 100vh;
+}
+
+.navbar{
+    background-color: black;   
+}
+
+.h1{
+    color: green;
+}
+
+h2{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    padding: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.job_opportunities_form{
+    /* border-style: solid;
+    border-color: red; */
+    /* text-align: center;
+    height: 400px;
+    width: 1200px; */
+    /* margin: 20px auto;
+    position: relative;
+    font-weight: bold;
+    font-size: 18px; */
+}
+
+label{
+    display: block;
+    padding: 5px;
+    float: left;
+}
+
+.input[type=text]{
+    background-color:grey; 
+    color:White; 
+    border-color:Blue;
+    width: 400px;
+}
+
+button{
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+}
+
+footer{
+    display: block;
+    margin: 0%;
+    padding: 1px 0px 2px 0px;
+    background-color: black;
+    height: 45px;
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+p{
+    color: white;
+    text-align: center;
+    
+}
+
+footer a{
+    float: right;
+    color: white;
+    margin: -32px 10px 0px 0px;
+    text-decoration: none;
+    flex: 0 0 auto
+}
