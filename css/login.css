@@ -3,6 +3,9 @@ body{
     margin: auto;
     padding: auto;
     max-height: auto;
+    position: relative;
+    padding-bottom: 0px; /*58px*/
+    min-height: 100vh;
 }
 
 .menu{
