@@ -33,26 +33,12 @@ img{
     height:auto;
 }
 
-.signupform{
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    height: 300px;
-    width: 400px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
-    font-size: 18px;
-}
 label{
     display: block;
     padding: 5px;
+    float: left;
 }
-input[type=email], input[type=password]{
-    padding: 5px;
-    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
-    border-radius: 10px;
-}
+
 button{
     border-radius: 10px;
     background-color: red;

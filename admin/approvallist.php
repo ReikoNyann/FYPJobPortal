@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/sa_dashboard.css">
+    <link rel="stylesheet" href="css/approvallist.css">
     <header>
         <title>Mu2WIL System Admin Approval request Page</title>
     </header>
