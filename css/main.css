@@ -2,7 +2,9 @@ body{
     max-width: 1280px;
     margin: auto;
     padding: auto;
-    
+    position: relative;
+    padding-bottom: 0px; /*58px*/
+    min-height: 100vh;
 }
 
 .navbar{
@@ -66,6 +68,8 @@ footer{
     color: white;
     margin: auto;
     padding: 1px;
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 

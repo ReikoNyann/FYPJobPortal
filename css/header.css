@@ -1,0 +1,158 @@
+body {
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
+    max-height: auto;
+}
+
+.menu {
+    background-color: black;
+    padding: 0;
+    margin: -20px auto;
+}
+
+.nav2:hover {
+    color: #e92b4a;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    right: 100px;
+    align: center;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e92b4a;
+    color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+.murdoch {
+    margin: 10px;
+    height: auto;
+    float: left;
+    padding: 0;
+}
+
+.submit-button {
+    border-color: #e92b4a;
+    color: white;
+    font: 400 20px/20px "Roboto", sans-serif;
+    padding: 5px 20px 5px 20px;
+}
+
+.loginform {
+    border-style: solid;
+    border-color: #e92b4a;
+    text-align: center;
+    min-height: 500px;
+    width: 95%;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.general-info {
+    border-style: solid;
+    border-color: #e92b4a;
+    text-align: center;
+    min-height: 400px;
+    width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    padding: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 5px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
+input[type="title"],
+textarea[type="describtion"] {
+    padding: 5px;
+    min-width: 50%;
+    max-width: 70%;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 5000px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #e92b4a;
+    color: white;
+    font-size: 15px;
+}
+
+footer {
+    clear: both;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-bottom: auto;
+    padding: 1px;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
