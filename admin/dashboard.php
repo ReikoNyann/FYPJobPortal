@@ -4,9 +4,8 @@
 <head>
     <link rel="stylesheet" href="css/sa_dashboard.css">
     <header>
-        <title>Mu2WIL Job Opportunity Page</title>
+        <title>Mu2WIL System Admin dashboard Page</title>
     </header>
-
 </head>
 
 <body>
@@ -22,13 +21,28 @@
 
         <br>
 
-        <div class="job_opportunities_form">
+        <!-- <div class="job_opportunities_form">
             <form action="" method="post">
                 <h2>Search jobs that you are interested in</h2><br>
                  <input type="text" placeholder="Search" />
                 <button>Search</button>
             </form>
-        </div>
+        </div> -->
+
+        <h2>Welcome, System Admin</h2><br>
+
+        <div>
+            <form action="" method="post">
+                <label>No. of account creation requests received:</label><br><br>
+                <button class="view_account">View list for pending account creation</button>
+            </form>
+
+            <form action="" method="post">
+                <label>No. of enquiries received:</label>
+                <button class="view_enquiries">View enquiries</button>
+            </form>
+        </div>>
+
     </main>
 
     <footer>

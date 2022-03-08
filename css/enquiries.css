@@ -33,21 +33,10 @@ img{
     height:auto;
 }
 
-.signupform{
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    height: 300px;
-    width: 400px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
-    font-size: 18px;
-}
-
 label{
     display: block;
     padding: 5px;
+    float: left;
 }
 
 button{
@@ -68,7 +57,6 @@ footer{
     bottom: 0;
     width: 100%;
 }
-
 p{
     color: white;
     text-align: center;
