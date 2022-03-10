@@ -3,22 +3,22 @@
     session_start();
     error_reporting(0);
 
-    if(isset($_SESSION['username'])){
-        header("Location: student/studentdash.php");
+    if(isset($_SESSION['email'])){
+        header("Location: dashboard.php");
     }
 
     if(isset($_POST['submit'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE email ='$email' AND password = '$password'";
+    $sql = "SELECT * FROM company WHERE CompanyEmail ='$email' AND CompanyPassword = '$password'";
     $result = mysqli_query($conn, $sql);
     if($result-> num_rows > 0){
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['username'] = $row['username'];
-        header("Location: student/studentdash.php");
+        $_SESSION['email'] = $row['email'];
+        header("Location: dashboard.php");
     } else {
-        echo "<script>alert('Email or Password is wrong!')</script>";
+        echo "<script>alert('Email or Password is wrong! If you do not have an account, register an account.')</script>";
     }
 }
 
@@ -29,6 +29,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/employer.css">
     <header>
         <title>Welcome to Mu2WIL</title>
     </header>
@@ -49,9 +50,9 @@
             <form action="" method="post">
             <label>Email: <input type="email" name="email"></label><br>
             <label>Password: <input type="password" name="password"></label><br>
-            <label><input type="checkbox" name="remember" id="remember">Remember Me</label>
-            <p><a href="/reset.php">Forget Password?</a></p>
-            <p>Are you a new employer looking to offer WIL offers? <a href="/register.php">Sign Up</a></p>
+            <label class="remember"><input type="checkbox" name="remember" id="remember" >Remember Me</label>
+            <p><a href="/reset.php" class="forget">Forget Password?</a></p>
+            <p class="new">Are you a new employer looking to offer WIL offers? <a href="/register.php">Sign Up</a></p>
             <button name="submit" class="btn">Login</button>
         </form> 
         </div>
