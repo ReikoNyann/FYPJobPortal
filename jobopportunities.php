@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/jobopportunities.css">
     <header>
         <title>Mu2WIL Job Opportunity Page</title>
@@ -11,13 +12,20 @@
 
 <body>
     <main>
+        <div class="logo">
+            <a href="login.php"><img width="250px" src="img/Murdoch_University_extended_logo.png" alt="logo"></a>
+        </div>
         <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
-                    </li>
-                </ul>
-            </nav>
+            <a href="jobopportunities.php">Job Opportunities</a>
+            <a href="contact.php">Contact Us</a>
+            <div class="dropdown">
+                <button class="droplist">USER
+                    <i class="togglelist"></i>
+                </button>
+                <div class="contentlist">
+                    <a href="logout.php">Logout</a>
+                </div>
+            </div>
         </div>
 
         <br>
@@ -33,7 +41,7 @@
 
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
-        <a href="#">Contact Us</a>
+        <a href="contact.php">Contact Us</a>
     </footer>
 </body>
 

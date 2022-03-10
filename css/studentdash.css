@@ -2,6 +2,10 @@ body{
     max-width: 1280px;
     margin: auto;
     padding: auto;
+    max-height: auto;
+    position: relative;
+    padding-bottom: 0px; /*58px*/
+    min-height: 100vh;
 }
 
 .logo{
@@ -10,6 +14,7 @@ body{
     padding: 10px;
     height: 70px;
 }
+
 .navbar{
     display: block;
     overflow: hidden;
@@ -70,13 +75,27 @@ body{
     display: block;
 }
 
-
 footer{
-    clear: both;
-    justify-content: center;
-    text-align: center;
+    display: block;
+    margin: 0%;
+    padding: 1px 0px 2px 0px;
     background-color: black;
+    height: 45px;
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+p{
     color: white;
-    margin: auto;
-    padding: 1px;
+    text-align: center;
+    
+}
+
+footer a{
+    float: right;
+    color: white;
+    margin: -32px 10px 0px 0px;
+    text-decoration: none;
+    flex: 0 0 auto
 }

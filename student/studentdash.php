@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/batchupdate.css">
+    <head>
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/studentdash.css">
     <header>
-        <title>Mu2WIL System Admin Update Status Page</title>
+        <title>Welcome to Mu2WIL</title>
     </header>
-
-</head>
-
+    </head>
 <body>
     <main>
         <div class="logo">
-            <a href="../login.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
+            <a href="studentdash.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
         </div>
         <div class="navbar">
             <a href="../jobopportunities.php">Job Opportunities</a>
@@ -23,20 +20,22 @@
                     <i class="togglelist"></i>
                 </button>
                 <div class="contentlist">
-                    <a href="adduser.php">Add New Account</a>
-                    <a href="enquiries.php">View Enquiries</a>
-                    <a href="batchupdate.php">Batch Create</a>
+                    <a href="profile.php">View Profile</a>
+                    <a href="application.php">View Applications</a>
                     <a href="../logout.php">Logout</a>
                 </div>
             </div>
         </div>
-
-        <h2>Update User Enquiry</h2>
+        
+        <div class="dash">
+            Insert dashboard stuff here, things needed: <br>
+            1) Welcome user<br>
+            2) recent jobs posted
+        </div>
     </main>
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
         <a href="../contact.php">Contact Us</a>
     </footer>
-</body>
-
+    </body>
 </html>

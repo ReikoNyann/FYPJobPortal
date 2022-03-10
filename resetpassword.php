@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/resetpasseord.css">
+    <link rel="stylesheet" href="css/resetpassword.css">
     <header>
         <title>Mu2WIL Reset Password Page</title>
     </header>
@@ -23,9 +23,9 @@
         <div class="resetpasswordform">
             <h2>Reset Password</h2>
             <br action="" method="post">
-                <label>Email: <input type="email" name="email"></label><br>
-                <label>New Password: <input type="password" name="password"></label><br>
-                <label>Re-enter New Password: <input type="password" name="password"></label><br><br><br><br><br>
+                <label>Email: <input type="email" name="email" placeholder="Email Address"></label><br>
+                <label>New Password: <input type="password" name="password" placeholder="Password"></label><br>
+                <label>Re-enter New Password: <input type="password" name="password" placeholder="Password"></label><br><br><br><br><br>
                 <!-- <input type="checkbox" name="remember" id="remember">
                 <label for="remember-me">Keep me signed in</label> -->
                 <button name="submit" class="btn">Submit</button>
@@ -34,7 +34,7 @@
     </main>
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
-        <a href="contractus.html">Contact Us</a>
+        <a href="contact.php">Contact Us</a>
     </footer>
 </body>
 

@@ -33,26 +33,29 @@ img{
     height:auto;
 }
 
-.adduserform{
+.testimonialform{
     border-style: solid;
     border-color: red;
     text-align: center;
-    height: 300px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin: 20px auto;
     position: relative;
     font-weight: bold;
     font-size: 18px;
 }
+
 label{
     display: block;
     padding: 5px;
 }
-input[type=text],[type=password],[type=email]{
+
+input[type=text]{
     padding: 5px;
     box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
     border-radius: 10px;
 }
+
 button{
     border-radius: 10px;
     background-color: red;

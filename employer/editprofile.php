@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/employer_edit.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/employer_edit.css" type="text/css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <header>
         <title>Employer edit profile Page</title>
@@ -10,13 +11,22 @@
 </head>
 
 <body>
+    <div class="logo">
+        <a href="../login.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
+    </div>
     <div class="navbar">
-        <nav>
-            <ul>
-                <li><a href="#"><img src="img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
-                </li>
-            </ul>
-        </nav>
+        <a href="../jobopportunities.php">Job Opportunities</a>
+        <a href="../contact.php">Contact Us</a>
+        <div class="dropdown">
+            <button class="droplist">USER
+                <i class="togglelist"></i>
+            </button>
+            <div class="contentlist">
+                <a href="editprofile.php">Edit Profile</a>
+                <a href="addNewJob.php">Add Job Offer</a>
+                <a href="../logout.php">Logout</a>
+            </div>
+        </div>
     </div>
 
     <div class="imgArea">
@@ -42,13 +52,13 @@
             <textarea></textarea>
             <h3>Company Goals</h3>
             <textarea></textarea>
-            <button class="btn">Edit</button>
+            <button class="btn">Submit</button>
         </form>      
     </div>
 
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
-        <a href="contractus.html">Contact Us</a>
+        <a href="../contact.php">Contact Us</a>
     </footer>
 
 </body>

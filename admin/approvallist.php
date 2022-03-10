@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/approvallist.css">
+    <link rel="stylesheet" href="../css/approvallist.css">
     <header>
         <title>Mu2WIL System Admin Approval request Page</title>
     </header>
@@ -27,7 +27,7 @@
 
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
-        <a href="#">Contact Us</a>
+        <a href="../contact.php">Contact Us</a>
     </footer>
 </body>
 

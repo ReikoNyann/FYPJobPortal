@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/employer_edit.css">
+    <link rel="stylesheet" href="../css/employer_edit.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <header>
         <title>Employer_edit Page</title>
@@ -13,7 +13,7 @@
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="#"><img src="img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
+                <li><a href="#"><img src="../img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
                 </li>
             </ul>
         </nav>
@@ -48,7 +48,7 @@
 
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
-        <a href="contractus.html">Contact Us</a>
+        <a href="../contact.php">Contact Us</a>
     </footer>
 
 </body>
