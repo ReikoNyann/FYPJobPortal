@@ -1,3 +1,18 @@
+<?php
+    include '../config.php';
+    session_start();
+    if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
+        //echo $_SESSION['uid']; //check userid captured
+        $uid = $_SESSION['uid'];
+        $sql = "SELECT * FROM company WHERE CompanyID = $uid";
+        $result = mysqli_query($conn,$sql);
+        $row = mysqli_fetch_assoc($result);
+        
+    } else{
+        echo 'no have';
+    }
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +32,7 @@
             <a href="/jobopportunities.php">Job Opportunities</a>
             <a href="/contact.php">Contact Us</a>
             <div class="dropdown">
-                <button class="droplist">USER
+                <button class="droplist"><?php echo $row['PersonInCharge']; ?>
                     <i class="togglelist"></i>
                 </button>
                 <div class="contentlist">
@@ -28,7 +43,7 @@
             </div>
         </div>
 
-        <h2>Welcome, Employer</h2><br><br>
+        <h2>Welcome,  <?php echo $row["PersonInCharge"] ?></h2><br>
 
         <button type="button" class="btn">View Application List</button><br><br>
 

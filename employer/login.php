@@ -3,7 +3,7 @@
     session_start();
     error_reporting(0);
 
-    if(isset($_SESSION['email'])){
+    if(isset($_SESSION['id'])){
         header("Location: dashboard.php");
     }
 
@@ -15,7 +15,7 @@
     $result = mysqli_query($conn, $sql);
     if($result-> num_rows > 0){
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['email'] = $row['email'];
+        $_SESSION['uid'] = $row['CompanyID'];
         header("Location: dashboard.php");
     } else {
         echo "<script>alert('Email or Password is wrong! If you do not have an account, register an account.')</script>";
