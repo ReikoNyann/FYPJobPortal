@@ -3,7 +3,7 @@
     session_start();
     error_reporting(0);
 
-    if(isset($_SESSION['username'])){
+    if(isset($_SESSION['email'])){
         header("Location: studentdash.php");
     }
 
@@ -11,7 +11,7 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE email ='$email' AND password = '$password'";
+    $sql = "SELECT * FROM student WHERE StudentEmail ='$email' AND StudentPassword = '$password'";
     $result = mysqli_query($conn, $sql);
     if($result-> num_rows > 0){
         echo "<script>alert('Please wait for 5 secs')</script>";
