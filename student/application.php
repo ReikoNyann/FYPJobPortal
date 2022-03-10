@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="../css/employer_edit.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/studentprofile.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <header>
         <title>Student View Application Status Page</title>
@@ -10,16 +11,27 @@
 </head>
 
 <body>
+    <div class="logo">
+        <a href="../index.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
+    </div>
     <div class="navbar">
-        <nav>
-            <ul>
-                <li><a href="application.php"><img src="../img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
-                </li>
-            </ul>
-        </nav>
+        <a href="../jobopportunities.php">Job Opportunities</a>
+        <a href="../contact.php">Contact Us</a>
+        <div class="dropdown">
+            <button class="droplist">USER
+                <i class="togglelist"></i>
+            </button>
+            <div class="contentlist">
+                <a href="profile.php">View Profile</a>
+                <a href="application.php">View Applications</a>
+                <a href="../logout.php">Logout</a>
+            </div>
+        </div>
     </div>
 
-    <button type="submit" class="btn">Click here for testimonial</button>
+    <a href="../testimonial.php">
+        <input type="button" class="btn">Click here for testimonial</input>
+    </a>
 
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>

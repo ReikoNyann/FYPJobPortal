@@ -8,8 +8,31 @@ body{
     min-height: 100vh;
 }
 
-.navbar{
+/* .navbar{
     background-color: black;   
+} */
+
+.logo{
+    display: block;
+    background-color: black;
+    padding: 10px;
+    height: 70px;
+}
+
+.navbar{
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    margin: -80px 0px 20px 832px;
+    text-align: right;
+}
+
+.navbar a{
+    float: left;
+    font-size: 18px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 ul{
@@ -24,7 +47,7 @@ li{
 }
 
 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -86,4 +109,48 @@ footer a{
     margin: -32px 10px 0px 0px;
     text-decoration: none;
     flex: 0 0 auto
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .droplist{
+    font-size:18px;
+    border:none;
+    outline: none;
+    color:white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .droplist{
+    background-color: red;
+}
+
+.contentlist{
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width:160px;
+    z-index: 1;
+}
+
+.contentlist a{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.contentlist a:hover{
+    background-color: red;
+}
+
+.dropdown:hover .contentlist{
+    display: block;
 }

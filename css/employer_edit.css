@@ -63,6 +63,10 @@ img{
     margin-top: 10px;
 }
 
+input[type=button]{
+    color: black;
+}
+
 ul{
     list-style-type: none;
     margin: 0;

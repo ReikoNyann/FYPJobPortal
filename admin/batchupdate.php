@@ -13,7 +13,7 @@
 <body>
     <main>
         <div class="logo">
-            <a href="../login.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
+            <a href="../index.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
         </div>
         <div class="navbar">
             <a href="../jobopportunities.php">Job Opportunities</a>

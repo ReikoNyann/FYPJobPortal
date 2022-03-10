@@ -13,7 +13,7 @@
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="#"><img src="../img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
+                <li><a href="../index.php"><img src="../img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
                 </li>
             </ul>
         </nav>

@@ -46,7 +46,7 @@
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="../login.php"><img src="../img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
+                    <li><a href="../index.php"><img src="../img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
                 </ul>
             </nav>
         </div>

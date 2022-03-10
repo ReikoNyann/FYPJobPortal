@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/studentprofile.css">
     <header>
         <title>Student Profile Page</title>
@@ -9,13 +10,22 @@
 </head>
 
 <body>
+    <div class="logo">
+        <a href="../index.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
+    </div>
     <div class="navbar">
-        <nav>
-            <ul>
-                <li><a href="profile.php"><img src="../img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
-                </li>
-            </ul>
-        </nav>
+        <a href="../jobopportunities.php">Job Opportunities</a>
+        <a href="../contact.php">Contact Us</a>
+        <div class="dropdown">
+            <button class="droplist">USER
+                <i class="togglelist"></i>
+            </button>
+            <div class="contentlist">
+                <a href="profile.php">View Profile</a>
+                <a href="application.php">View Applications</a>
+                <a href="../logout.php">Logout</a>
+            </div>
+        </div>
     </div>
 
     <div class="imgArea">
