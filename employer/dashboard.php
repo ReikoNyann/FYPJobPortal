@@ -1,8 +1,23 @@
+<?php
+    include '../config.php';
+    session_start();
+    if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
+        //echo $_SESSION['uid']; //check userid captured
+        $uid = $_SESSION['uid'];
+        $sql = "SELECT * FROM company WHERE CompanyID = $uid";
+        $result = mysqli_query($conn,$sql);
+        $row = mysqli_fetch_assoc($result);
+        
+    } else{
+        echo 'no have';
+    }
+
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="/css/employerdash.css">
     <header>
         <title>Mu2WIL Employer Dashboard Page</title>
     </header>
@@ -10,18 +25,25 @@
 
 <body>
     <main>
+    <div class="logo">
+            <a href="/student/studentdash.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
+        </div>
         <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
-                    </li>
-                </ul>
-            </nav>
+            <a href="/jobopportunities.php">Job Opportunities</a>
+            <a href="/contact.php">Contact Us</a>
+            <div class="dropdown">
+                <button class="droplist"><?php echo $row['PersonInCharge']; ?>
+                    <i class="togglelist"></i>
+                </button>
+                <div class="contentlist">
+                    <a href="/employer/profile.php">View Profile</a>
+                    <a href="/employer/viewapplicant.php">View Applicants</a>
+                    <a href="/logout.php">Logout</a>
+                </div>
+            </div>
         </div>
 
-        <br>
-
-        <h2>Welcome, Employer</h2><br><br>
+        <h2>Welcome,  <?php echo $row["PersonInCharge"] ?></h2><br>
 
         <button type="button" class="btn">View Application List</button><br><br>
 

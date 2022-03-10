@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/css/employerdash.css">
     <link rel="stylesheet" href="css/addNewJob.css">
     <header>
         <title>Mu2WIL Add New Job Offer</title>
@@ -11,13 +12,22 @@
 
 <body>
     <main>
+    <div class="logo">
+            <a href="/student/studentdash.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
+        </div>
         <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
-                    </li>
-                </ul>
-            </nav>
+            <a href="/jobopportunities.php">Job Opportunities</a>
+            <a href="/contact.php">Contact Us</a>
+            <div class="dropdown">
+                <button class="droplist">USER
+                    <i class="togglelist"></i>
+                </button>
+                <div class="contentlist">
+                    <a href="/employer/profile.php">View Profile</a>
+                    <a href="/employer/viewapplicant.php">View Applicants</a>
+                    <a href="/logout.php">Logout</a>
+                </div>
+            </div>
         </div>
 
         <div class="signupform">
