@@ -67,7 +67,7 @@
                 
                 <h3>Contact Details</h3>
                 <p>Email: <?php echo $row['CompanyEmail'] ?></p>
-                <p>Contact Number: <?php echo $row['ContactNo'] ?></p>
+                <p>Contact Number: <?php echo $row['ContactNumber'] ?></p>
                 <p>Address: <?php echo $row['CompanyAddress'] ?></p>
             </div>
             <div class ="companyinfo">

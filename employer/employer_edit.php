@@ -103,7 +103,7 @@
                 <div class ="contactpart">
                 <h3>ContactDetails</h3>
                 <label>Email: <input size="20" type='text' name='email' id='email' value="<?php echo $row['CompanyEmail'] ?>"/></label><br> 
-                <label>Contact Number: <input type='text' name='contact' id='contact' value="<?php echo $row['ContactNo'] ?>" /></label><br> 
+                <label>Contact Number: <input type='text' name='contact' id='contact' value="<?php echo $row['ContactNumber'] ?>" /></label><br> 
                 <label>Address: <input size="40" type='text' name='address' id='address' value='<?php echo $row['CompanyAddress'] ?>' /></label><br> 
                 </div>
                 <div class="detailspart">
