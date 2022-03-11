@@ -1,0 +1,31 @@
+.photo{
+    margin: 40px 0 0 60px;
+}
+.contactpart{
+    margin: -10px 0 10px 60px;
+    float: left;
+}
+
+.detailspart{
+    width: 60%;
+    float: right;
+    margin: -290px 0 20px 0;
+}
+textarea{
+    width: 600px;
+}
+h3{
+    color: red;
+}
+.updatebtn{
+    float: right;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-right:20px;
+    width:150px;
+    height: 30px;
+
+}

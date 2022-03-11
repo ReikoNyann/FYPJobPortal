@@ -13,7 +13,7 @@
         $row = mysqli_fetch_assoc($result);
         
     } else{
-        echo 'no have';
+        echo 'Failed connecting to database';
     }
 
 ?>
@@ -32,7 +32,7 @@
 
 <body>
     <div class="logo">
-            <a href="/student/studentdash.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
+            <a href="/employer/dashboard.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
         </div>
         <div class="navbar">
             <a href="/jobopportunities.php">Job Opportunities</a>
@@ -60,7 +60,7 @@
                             echo '<img width ="200px" height="auto" src="/img/imageplaceholder.jpg" placeholder="company logo here">';
                             
                         }else{
-                            echo $row['CompanyLogo'];
+                            echo '<img width="250px" height="250px" src="/uploads/'.$row['CompanyLogo'].'">';
                         }
                     ?>
                 </div>

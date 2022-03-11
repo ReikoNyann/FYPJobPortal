@@ -13,13 +13,13 @@
 <body>
     <main>
         <div class="logo">
-            <a href="/student/studentdash.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
+            <a href="/employer/dashboard.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
         </div>
         <div class="navbar">
             <a href="/jobopportunities.php">Job Opportunities</a>
             <a href="/contact.php">Contact Us</a>
             <div class="dropdown">
-                <button class="droplist">USER
+                <button class="droplist"><?php echo $row['PersonInCharge']; ?>
                     <i class="togglelist"></i>
                 </button>
                 <div class="contentlist">
