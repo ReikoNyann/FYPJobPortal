@@ -1,9 +1,29 @@
+<?php
+    include '../config.php';
+    session_start();
+    if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
+        //echo $_SESSION['uid']; //check userid captured
+        //declare login userid 
+        $uid = $_SESSION['uid'];
+        //get data from table
+        $sql = "SELECT * FROM company WHERE CompanyID = $uid";
+        //connect DB and sql query
+        $result = mysqli_query($conn,$sql);
+        //fetch results 
+        $row = mysqli_fetch_assoc($result);
+        
+    } else{
+        echo 'no have';
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <link rel="stylesheet" href="/css/employerdash.css">
-    <link rel="stylesheet" href="css/employer_edit.css">
+    <link rel="stylesheet" href="/css/employerprofile.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <header>
         <title>Employer Profile Page</title>
@@ -18,7 +38,7 @@
             <a href="/jobopportunities.php">Job Opportunities</a>
             <a href="/contact.php">Contact Us</a>
             <div class="dropdown">
-                <button class="droplist">USER
+                <button class="droplist"><?php echo $row['PersonInCharge']; ?>
                     <i class="togglelist"></i>
                 </button>
                 <div class="contentlist">
@@ -28,24 +48,43 @@
                 </div>
             </div>
         </div>
-    <div class="imgArea">
-        <h2>Employer Profile</h2>
-        <button type="button" class="btn">Edit Profile</button>
-        
-    </div>
 
-    <div class="EmployerEditForm">
-        <form action="" method="post">
-            <h3>Company History</h3><br>
-            <h3>Company Achievements</h3><br>
-            <h3>Company Vision</h3><br>
-            <h3>Company Goals</h3><br>
-        </form>      
-    </div>
+        <div class="profile">
+            <div class="details">
+                <h2><?php echo $row['CompanyName'] ?></h2>
+                <div class="displaypic">
+                    <?php 
+                        //check if logo is uploaded into database
+                        if ($row['CompanyLogo'] == NULL){
+                            //if no logo display
+                            echo '<img width ="200px" height="auto" src="/img/imageplaceholder.jpg" placeholder="company logo here">';
+                            
+                        }else{
+                            echo $row['CompanyLogo'];
+                        }
+                    ?>
+                </div>
+                
+                <h3>Contact Details</h3>
+                <p>Email: <?php echo $row['CompanyEmail'] ?></p>
+                <p>Contact Number: <?php echo $row['ContactNo'] ?></p>
+                <p>Address: <?php echo $row['CompanyAddress'] ?></p>
+            </div>
+            <div class ="companyinfo">
+                <div class="editbutton">
+                <button type="button" class="editbtn"><a href="/employer/employer_edit.php">Edit Profile</a></button>
+                </div>
+                <h3>About</h3>
+                <p><?php echo $row['CompanyProfile']?></p>
+                <h3>Our Goal</h3>
+                <p><?php echo $row['Goals']?></p>
+                <h3>Our Vision</h3>
+                <p><?php echo $row['Vision']?></p>
+            </div>
+        </div>
 
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
-        <a href="contractus.html">Contact Us</a>
     </footer>
 
 </body>
