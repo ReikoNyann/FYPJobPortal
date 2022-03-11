@@ -3,13 +3,17 @@
     session_start();
     if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
         //echo $_SESSION['uid']; //check userid captured
+        //declare login userid 
         $uid = $_SESSION['uid'];
+        //get data from table
         $sql = "SELECT * FROM company WHERE CompanyID = $uid";
+        //connect DB and sql query
         $result = mysqli_query($conn,$sql);
+        //fetch results 
         $row = mysqli_fetch_assoc($result);
         
     } else{
-        echo 'no have';
+        echo 'Failed connecting to database';
     }
 
 ?>
@@ -26,7 +30,7 @@
 <body>
     <main>
     <div class="logo">
-            <a href="/student/studentdash.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
+            <a href="/employer/dashboard.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
         </div>
         <div class="navbar">
             <a href="/jobopportunities.php">Job Opportunities</a>

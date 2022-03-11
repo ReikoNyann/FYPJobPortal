@@ -1,0 +1,36 @@
+.profile{
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+.details{
+    margin: -10px 0 10px 20px;
+    float: left;
+}
+
+.companyinfo{
+    width:75%;
+    float: right;
+}
+
+h2, h3{
+    color: red;
+    font-weight: bold;
+}
+
+.editbtn{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    float: right;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+}
+.editbtn a{
+    color: white;
+    text-decoration: none;
+}
+
