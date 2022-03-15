@@ -1,3 +1,21 @@
+<?php
+    include'../config.php';
+    session_start();
+    error_reporting(0);
+
+    if(isset($_SESSION['id'])){
+        header("Location: dashboard.php");
+    }
+
+    if(isset($_POST['submit'])){
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+    }
+
+    
+
+?>
+
 <!DOCTYPE html>
 <html>
 

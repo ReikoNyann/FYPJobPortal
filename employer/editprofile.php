@@ -1,3 +1,10 @@
+<?php
+    include'../config.php';
+    session_start();
+    if
+
+?>
+
 <!DOCTYPE html>
 <html>
 

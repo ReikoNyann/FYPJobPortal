@@ -1,3 +1,16 @@
+<?php
+    include '../config.php';
+    session_start();
+    if (isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
+        $uid = $_SESSION['uid'];
+        $sql = "SELECT * FROM student WHERE StudentID = '$uid'";
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_assoc($result);
+    } else {
+        echo 'Failed connecting to database';
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 

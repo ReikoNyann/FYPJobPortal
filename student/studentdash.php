@@ -1,10 +1,30 @@
+<?php
+    include '../config.php';
+    session_start();
+    error_reporting(0);
+
+    if (isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
+        //echo $_SESSION['uid']
+        //declare login userID
+        $uid = $_SESSION['uid'];
+        //get data from table
+        $sql = "SELECT * FROM student WHERE StudentID = $uid";
+        //connect DB and sql query
+        $result = mysqli_query($conn, $sql);
+        //fetch results
+        $row = mysqli_fetch_assoc($result);
+    } else {
+        echo 'Failed connecting to database';
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="../css/navbar.css">
         <link rel="stylesheet" href="../css/studentdash.css">
     <header>
-        <title>Welcome to Mu2WIL</title>
+        <title>Mu2WIL Student Dashboard Page</title>
     </header>
     </head>
 <body>
@@ -26,12 +46,14 @@
                 </div>
             </div>
         </div>
+
+        <h2>Welcome, <?php echo $row["StudentName"] ?></h2><br>
         
-        <div class="dash">
+        <!-- <div class="dash">
             Insert dashboard stuff here, things needed: <br>
             1) Welcome user<br>
             2) recent jobs posted
-        </div>
+        </div> -->
     </main>
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
