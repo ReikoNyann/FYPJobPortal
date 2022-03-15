@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main/main.css">
     <header>
         <title>Welcome to Mu2WIL</title>
     </header>

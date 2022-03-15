@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="stylesheet" href="css/main/testimonial.css">
     <header>
         <title>Mu2WIL Testimonial</title>
     </header>

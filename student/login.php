@@ -3,7 +3,7 @@
     session_start();
     error_reporting(0);
 
-    if(isset($_SESSION['email'])){
+    if(isset($_SESSION['uid'])){
         header("Location: studentdash.php");
     }
 
@@ -16,7 +16,7 @@
     if($result-> num_rows > 0){
         echo "<script>alert('Please wait for 5 secs')</script>";
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['username'] = $row['username'];
+        $_SESSION['uid'] = $row['StudentID'];
         header("Location: studentdash.php");
     } else {
         echo "<script>alert('Email or Password is wrong!')</script>";
@@ -28,7 +28,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/main/login.css">
     <header>
         <title>Welcome to Mu2WIL</title>
     </header>

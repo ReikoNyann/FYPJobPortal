@@ -27,7 +27,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="/css/login.css">
-        <link rel="stylesheet" href="/css/register.css">
+        <link rel="stylesheet" href="/css/employer/register.css">
     <header>
         <title>Registration for MU2WIL</title>
     </header>

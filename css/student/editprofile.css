@@ -1,0 +1,28 @@
+.StudentProfileForm{
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+}
+.photo{
+    margin: 50px 0 0 60px;
+}
+.contactpart{
+    margin: -10px 0 10px 50px;
+    float: left;
+}
+input[type="text"]{
+    padding: 5px;
+    margin: 5px;
+}
+.detailspart{
+    width: 60%;
+    float: right;
+    margin: -250px 0 20px 0;
+}
+
+textarea{
+    width: 600px;
+}
+h3{
+    color: red;
+}

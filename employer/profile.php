@@ -22,8 +22,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/css/employerdash.css">
-    <link rel="stylesheet" href="/css/employerprofile.css">
+    <link rel="stylesheet" href="/css/employer/employerdash.css">
+    <link rel="stylesheet" href="/css/employer/employerprofile.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <header>
         <title>Employer Profile Page</title>
@@ -60,7 +60,7 @@
                             echo '<img width ="200px" height="auto" src="/img/imageplaceholder.jpg" placeholder="company logo here">';
                             
                         }else{
-                            echo '<img width="250px" height="250px" src="/uploads/'.$row['CompanyLogo'].'">';
+                            echo '<img width="250px" height="250px" src="/uploads/employer'.$row['CompanyLogo'].'">';
                         }
                     ?>
                 </div>
@@ -72,7 +72,7 @@
             </div>
             <div class ="companyinfo">
                 <div class="editbutton">
-                <button type="button" class="editbtn"><a href="/employer/employer_edit.php">Edit Profile</a></button>
+                <button type="button" class="editbtn"><a href="/employer/employeredit.php">Edit Profile</a></button>
                 </div>
                 <h3>About</h3>
                 <p><?php echo $row['CompanyProfile']?></p>

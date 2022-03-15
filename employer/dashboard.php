@@ -21,7 +21,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/css/employerdash.css">
+    <link rel="stylesheet" href="/css/employer/employerdash.css">
     <header>
         <title>Mu2WIL Employer Dashboard Page</title>
     </header>
