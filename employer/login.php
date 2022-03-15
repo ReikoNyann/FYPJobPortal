@@ -31,7 +31,7 @@
         <link rel="stylesheet" href="/css/login.css">
         <link rel="stylesheet" href="/css/employer.css">
     <header>
-        <title>Welcome to Mu2WIL</title>
+        <title>Reset Password</title>
     </header>
 
     </head>
@@ -40,7 +40,7 @@
     <main>
     <div class="menu">
         <div class="murdoch">
-            <a href="#"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
+            <a href="../index.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
         </div>
     </div>
 
@@ -51,8 +51,8 @@
             <label>Email: <input type="email" name="email"></label><br>
             <label>Password: <input type="password" name="password"></label><br>
             <label class="remember"><input type="checkbox" name="remember" id="remember" >Remember Me</label>
-            <p><a href="/reset.php" class="forget">Forget Password?</a></p>
-            <p class="new">Are you a new employer looking to offer WIL offers? <a href="/register.php">Sign Up</a></p>
+            <p><a href="/employer/reset.php" class="forget">Forget Password?</a></p>
+            <p class="new">Are you a new employer looking to offer WIL offers? <a href="/employer/register.php">Sign Up</a></p>
             <button name="submit" class="btn">Login</button>
         </form> 
         </div>

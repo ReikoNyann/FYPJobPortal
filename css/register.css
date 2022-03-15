@@ -1,0 +1,32 @@
+h2{
+    color: red;
+}
+.loginform{
+    height: 600px;
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+}
+.resetform{
+    margin: 20px auto;
+    position: relative;
+    border-style: solid;
+    border-color: red;
+    height: 300px;
+    width: 40%;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+label{
+    text-align: left;
+    margin-left: 100px;
+}
+
+button{
+    margin-top:10px;
+    width: 150px;
+    height: inherit;
+    float: right;
+    margin-right: 60px;
+}
