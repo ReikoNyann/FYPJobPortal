@@ -1,0 +1,32 @@
+.StudentProfile{
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+.details{
+    margin-left: 10px;
+    float:left;
+}
+.studentinfo{
+    width:75%;
+    float: right;
+}
+
+h2, h3{
+    color:red;
+}
+.editbtn{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    float: right;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+}
+.editbtn a{
+    color: white;
+    text-decoration: none;
+}

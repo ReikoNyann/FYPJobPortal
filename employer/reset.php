@@ -30,17 +30,6 @@
             echo "<script>alert('The email: $email, does not exist. Please proceed to sign up. Redirecting you to the registration page.');
             window.location.href='register.php';</script>";
         }
-        
-        
-       
-        
-
-        
-
-        
-
-
-
     }
 ?>
 

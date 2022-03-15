@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/contract.css">
+    <link rel="stylesheet" href="css/main/enquiries.css">
     <header>
         <title>Mu2WIL Contract Us Page</title>
     </header>

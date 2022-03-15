@@ -6,7 +6,7 @@
         //declare login userid 
         $uid = $_SESSION['uid'];
         //get data from table
-        $sql = "SELECT * FROM company WHERE CompanyID = $uid";
+        $sql = "SELECT * FROM company WHERE CompanyID ='$uid'";
         //connect DB and sql query
         $result = mysqli_query($conn,$sql);
         //fetch results 
@@ -19,12 +19,15 @@
     if(isset($_POST['submit'])){
         $filename = $_FILES["file"]["name"];
         $tempname = $_FILES["file"]["tmp_name"];
-        $folder = "../uploads/".$filename;
+        $folder = "../uploads/employer/".$filename;
         $insert = "UPDATE company SET CompanyLogo = '$filename' WHERE CompanyID = $uid";
         $inresult = mysqli_query($conn, $insert);
         if(move_uploaded_file($tempname, $folder)){
-            $msg = "";
-            $msg = "Uploaded successfully";
+            echo "<script>
+            alert('Your profile have been updated!');
+            window.location.reload(true);
+            </script>";
+            header("Location: employeredit.php");
         }else{
             echo "Failed upload";
         }
@@ -37,17 +40,20 @@
         $about = $_POST['about'];
         $goals = $_POST['goals'];
         $vision = $_POST['vision'];
-        $updatedata = "UPDATE company SET CompanyEmail = '$email', ContactNo = '$contactno', CompanyAddress = '$address', CompanyProfile ='$about', Goals = '$goals', Vision ='$vision' WHERE CompanyID = $uid";
-        if (mysqli_query($conn, $updatedata)){
-            
+        $about2 = str_replace("'", "''", $about);
+        $goal2 = str_replace("'", "''", $goals);
+        $vision2 = str_replace("'", "''", $vision);
+        $data = "UPDATE company SET CompanyEmail='$email' ,CompanyAddress='$address' ,CompanyProfile='$about2' ,ContactNumber='$contactno' ,Goals='$goals2' ,Vision='$vision2' WHERE CompanyID ='$uid'";
+        $update = mysqli_query($conn, $data);
+        if ($update){
             echo "<script>
             alert('Your profile have been updated!');
-            location ='profile.php';
             </script>";
         }else{
+            echo $data;
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
             echo "<script>
             alert('There is an error updating your profile.')
-            location ='employer_edit.php';
             </script>";
         }
 
@@ -59,12 +65,12 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/css/employerdash.css">
-    <link rel="stylesheet" href="/css/employerprofile.css">
-    <link rel="stylesheet" href="/css/employeredit.css">
+    <link rel="stylesheet" href="/css/employer/employerdash.css">
+    <link rel="stylesheet" href="/css/employer/employerprofile.css">
+    <link rel="stylesheet" href="/css/employer/employeredit.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <header>
-        <title>Employer_edit Page</title>
+        <title>Edit Profile</title>
     </header>
 </head>
 
@@ -91,8 +97,15 @@
         <div class="photo">
             <form action = "" method="post" enctype="multipart/form-data">
                 <?php 
-                    echo '<img width="250px" height="250px" src="/uploads/'.$row['CompanyLogo'].'">';
-                ?><br>
+                    //check if logo is uploaded into database
+                    if ($row['CompanyLogo'] == NULL){
+                        //if no logo display
+                        echo '<img width ="200px" height="auto" src="/img/imageplaceholder.jpg" placeholder="company logo here">';
+                            
+                    }else{
+                        echo '<img width="250px" height="250px" src="/uploads/employer'.$row['CompanyLogo'].'">';
+                    }
+                    ?><br>
                 Upload an image file:<br>
                 <input type="file" name="file">
                 <input type="submit" name="submit" value="Upload">

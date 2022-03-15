@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/jobopportunities.css">
+    <link rel="stylesheet" href="css/main/jobopportunities.css">
     <header>
         <title>Mu2WIL Job Opportunity Page</title>
     </header>

@@ -1,8 +1,25 @@
+<?php
+    include '../config.php';
+    session_start();
+
+    if (isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
+        //declare login userID
+        $uid = $_SESSION['uid'];
+        //get data from table
+        $sql = "SELECT * FROM student WHERE StudentID = $uid";
+        //connect DB and sql query
+        $result = mysqli_query($conn, $sql);
+        //fetch results
+        $row = mysqli_fetch_assoc($result);
+    } else {
+        echo 'Failed connecting to database';
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/css/navbar.css">
-        <link rel="stylesheet" href="/css/studentdash.css">
+        <link rel="stylesheet" href="/css/main/navbar.css">
+        <link rel="stylesheet" href="/css/student/studentdash.css">
     <header>
         <title>Welcome to Mu2WIL</title>
     </header>
@@ -16,7 +33,7 @@
             <a href="/jobopportunities.php">Job Opportunities</a>
             <a href="/contact.php">Contact Us</a>
             <div class="dropdown">
-                <button class="droplist">USER
+                <button class="droplist"><?php echo $row['StudentName']; ?>
                     <i class="togglelist"></i>
                 </button>
                 <div class="contentlist">

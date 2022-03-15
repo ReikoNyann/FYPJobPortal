@@ -3,7 +3,7 @@
     session_start();
     error_reporting(0);
 
-    if(isset($_SESSION['uid'])){
+    if(isset($_SESSION['id'])){
         header("Location: dashboard.php");
     }
 
@@ -28,8 +28,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/css/main/login.css">
-        <link rel="stylesheet" href="/css/employer/employer.css">
+        <link rel="stylesheet" href="/css/login.css">
     <header>
         <title>Reset Password</title>
     </header>

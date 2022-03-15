@@ -23,7 +23,6 @@
 
 <head>
     <link rel="stylesheet" href="/css/employerdash.css">
-    <link rel="stylesheet" href="css/signup.css">
     <header>
         <title>Mu2WIL View Application Page</title>
     </header>
