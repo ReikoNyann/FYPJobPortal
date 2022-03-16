@@ -1,6 +1,9 @@
 <?php
     include '../config.php';
     session_start();
+    error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+
     if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
         $uid = $_SESSION['uid'];
         //get data from table
@@ -27,7 +30,7 @@
             echo "<script>alert('Failed Upload')</script>";
         }
     }
-
+    //update profile
     if(isset($_POST['update'])){
         $email = $_POST['email'];
         $contactno = $_POST['contact'];
@@ -39,6 +42,7 @@
         $education2 = str_replace("'","''", $education);
         $skill2 = str_replace("'","''", $skill);
         $workex2 = str_replace("'","''", $workex);
+        //insert data into database
         $updatedata = "UPDATE student SET StudentEmail = '$email', StudentContactNumber = '$contactno', StudentProfile = '$profile2', StudentEducation = '$education2', StudentSkills = '$skill2', StudentWorkExperience = '$workex2' WHERE StudentID = $uid";
         if(mysqli_query($conn, $updatedata)){
             echo "<script>
@@ -53,46 +57,6 @@
         }
     }
 
-    if(isset($_FILES['resume'])){
-        $errors = array();
-        $resumename = $_FILES['resume']['name'];
-        $tempresume = $_FILES['resume']['tmp_name'];
-        $extensions = array("pdf","docx", "doc");
-        if(in_array($file_ext,$extensions)=== false){
-            $errors[] = "Extension not allowed, please choose a PDF or DOCX file.";
-        }
-        if(empty($errors)==true){
-            move_uploaded_file($file_tmp,"uploads/student/resume/".$resumename);
-            echo "<script>
-            alert('resume uploaded');
-            </script>";
-        }else{
-            echo "<script>
-            alert('There is an error updating your profile.');
-            </script>";
-        }
-    }
-
-    /*(isset($_POST['uploadres'])){
-        $resumename=$_FILES["resume"]["name"];
-        $tempresume_name=$_FILES["resume"]["tmp_name"];
-        $path = "../uploads/student/resume/".$resumename;
-        $insert2 = "UPDATE student SET StudentResume = '$resumename' WHERE StudentID = $uid";
-        $inresult2 = mysqli_query($conn, $insert2);
-        if(move_uploaded_file($tempresume_name, $path)) {
-            echo "<script>
-            alert('Your Resume has been uploaded');
-            location = 'profile.php';
-            </script>";
-        } else {
-            
-            /*echo "<script>
-            alert('An error occured');
-            location = 'editprofile.php';
-            </script>";
-            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-        }
-        }*/ 
 ?>
 
 <!DOCTYPE html>
@@ -115,7 +79,7 @@
         <a href="../jobopportunities.php">Job Opportunities</a>
         <a href="../contact.php">Contact Us</a>
         <div class="dropdown">
-            <button class="droplist"><?php echo $row['StudentName']; ?>
+            <button class="droplist"><?php echo '<span style="font-size:15px; font-family:Segoe UI; font-weight:bold;">' . $row['StudentName'] . '</span>'; ?>
                 <i class="togglelist"></i>
             </button>
             <div class="contentlist">
@@ -131,9 +95,9 @@
             <?php
                 echo '<img width="250px" height="250px" src="../uploads/student/dp/'.$row['StudentPhoto'].'">';
             ?><br>
-            Upload an image file:<br>
+            <b>Upload an image file:</b><br>
             <input type="file" name="file">
-            <input type="submit" name="submit" value="Upload">
+            <input type="submit" name="submit" value="Upload" class="upload">
         </form>
     </div>
 
@@ -141,8 +105,8 @@
         <form action="" method="post">
             <div class = "contactpart">
                 <h3>Contact Details</h3>
-                <label>Email: <input size="20" type='text' name='email' id='email' value="<?php echo $row['StudentEmail'] ?>"/></label><br> 
-                <label>Contact Number: <input size="20" type='text' name='contact' id='contact' value="<?php echo $row['StudentContactNumber'] ?>"/></label><br> 
+                <label><b>Email:</b> <input size="20" type='text' name='email' id='email' value="<?php echo $row['StudentEmail'] ?>"/></label><br> 
+                <label><b>Contact Number:</b> <input size="20" type='text' name='contact' id='contact' value="<?php echo $row['StudentContactNumber'] ?>"/></label><br> 
             </div>
 
             <div class = "detailspart">
@@ -151,14 +115,6 @@
                 <label><h3>Profile: </h3><textarea name="profile" rows="6"><?php echo $row['StudentProfile'] ?></textarea></label><br>
                 <label><h3>Work Experience: </h3><textarea name="workexperience" rows="6"><?php echo $row['StudentWorkExperience'] ?></textarea></label><br>
                 <label><h3>Skill: </h3><textarea name="skill" rows="6"><?php echo $row['StudentSkills'] ?></textarea></label><br>
-                <label><h3>Resume: </h3></label>
-                <div class="resume">
-            <form action = "" method = "post" enctype= "multipart/form-data">
-            
-            Upload Resume<br>
-            <input type="file" name="resume">
-            <input type="submit" name="uploadres" value="Upload">
-        </form>
             </div>
             
     </div>

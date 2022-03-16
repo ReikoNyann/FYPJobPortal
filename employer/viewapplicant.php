@@ -6,7 +6,7 @@
         //declare login userid 
         $uid = $_SESSION['uid'];
         //get data from table
-        $sql = "SELECT * FROM company WHERE CompanyID = $uid";
+        $sql = "SELECT * FROM application WHERE CompanyID = $uid";
         //connect DB and sql query
         $result = mysqli_query($conn,$sql);
         //fetch results 
@@ -22,7 +22,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/css/employerdash.css">
+    <link rel="stylesheet" href="../css/signup.css">
     <header>
         <title>Mu2WIL View Application Page</title>
     </header>
@@ -31,33 +31,37 @@
 
 <body>
     <main>
-    <div class="logo">
-            <a href="/employer/dashboard.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
-        </div>
         <div class="navbar">
-            <a href="/jobopportunities.php">Job Opportunities</a>
-            <a href="/contact.php">Contact Us</a>
-            <div class="dropdown">
-                <button class="droplist"><?php echo $row['PersonInCharge']; ?>
-                    <i class="togglelist"></i>
-                </button>
-                <div class="contentlist">
-                    <a href="/employer/profile.php">View Profile</a>
-                    <a href="/employer/viewapplicant.php">View Applicants</a>
-                    <a href="/logout.php">Logout</a>
-                </div>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.php"><img src="../img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
-        <div class="applicationform">
+        <!-- <div class="applicationform">
             <h2>Application Details</h2>
             <form action="" method="post">
                 <button name="submit" class="btn">View Application</button>
             </form>
-        </div>
+        </div> -->
+
+        <h4>Application ID: </h4>
+        <?php echo $row['ApplicationID']; ?><br />
+        <h4>Apply Date: </h4>
+        <?php echo $row['ApplyDate']; ?><br />
+        <h4>Apply Status: </h4>
+        <?php echo $row['ApplyStatus']; ?><br />
+        <h4>Job ID: </h4>
+        <?php echo $row['JobID']; ?><br />
+        <h4>Student Apply ID: </h4>
+        <?php echo $row['StudentID']; ?><br />
+
     </main>
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
+        <a href="../contact.php">Contact Us</a>
     </footer>
 </body>
 
