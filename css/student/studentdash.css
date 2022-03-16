@@ -1,4 +1,5 @@
 body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 1280px;
     margin: auto;
     padding: auto;
@@ -12,8 +13,9 @@ body{
 }
 
 .navbar a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     float: left;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     padding: 14px 16px;
     text-decoration: none;

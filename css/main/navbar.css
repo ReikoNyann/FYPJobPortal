@@ -1,4 +1,5 @@
 body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 1280px;
     margin: auto;
     padding: auto;
@@ -11,6 +12,8 @@ body{
     height: 70px;
 }
 .navbar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
     display: block;
     overflow: hidden;
     padding: 10px;
@@ -19,8 +22,10 @@ body{
 }
 
 .navbar a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     float: left;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: bold;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -32,7 +37,8 @@ body{
 }
 
 .dropdown .droplist{
-    font-size:18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:15px;
     border:none;
     outline: none;
     color:white;
@@ -72,6 +78,8 @@ body{
 
 
 footer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
     clear: both;
     justify-content: center;
     text-align: center;

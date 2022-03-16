@@ -36,7 +36,7 @@
         <a href="../jobopportunities.php">Job Opportunities</a>
         <a href="../contact.php">Contact Us</a>
         <div class="dropdown">
-            <button class="droplist"><?php echo $row['StudentName']; ?>
+            <button class="droplist"><?php echo '<span style="font-size:15px; font-family:Segoe UI; font-weight:bold;">' . $row['StudentName'] . '</span>'; ?>
                 <i class="togglelist"></i>
             </button>
             <div class="contentlist">
@@ -79,14 +79,7 @@
             <p><?php echo $row['StudentWorkExperience']?></p>
             <h3>Skills/Knowledge</h3>
             <p><?php echo $row['StudentSkills']?></p>
-            <h3>Resume</h3>
-            <?php
-                    if($row['StudentResume'] == NULL) {
-                        echo 'Please upload your resume';
-                    } else {
-                        echo 'src="../uploads/student/resume'.$row['StudentResume'].'">';
-                    }
-                ?>    
+            
         </div>
 
     <footer>
