@@ -1,21 +1,20 @@
 <?php
     include '../config.php';
     session_start();
-    error_reporting(0);
-
-    if (isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
-        //echo $_SESSION['uid']
-        //declare login userID
+    if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
+        //echo $_SESSION['uid']; //check userid captured
+        //declare login userid 
         $uid = $_SESSION['uid'];
         //get data from table
         $sql = "SELECT * FROM student WHERE StudentID = $uid";
         //connect DB and sql query
-        $result = mysqli_query($conn, $sql);
-        //fetch results
+        $result = mysqli_query($conn,$sql);
+        //fetch results 
         $row = mysqli_fetch_assoc($result);
-    } else {
+    } else{
         echo 'Failed connecting to database';
     }
+
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +35,7 @@
             <a href="../jobopportunities.php">Job Opportunities</a>
             <a href="../contact.php">Contact Us</a>
             <div class="dropdown">
-                <button class="droplist">USER
+                <button class="droplist"><?php echo $row['StudentName']; ?>
                     <i class="togglelist"></i>
                 </button>
                 <div class="contentlist">
@@ -49,11 +48,6 @@
 
         <h2>Welcome, <?php echo $row["StudentName"] ?></h2><br>
         
-        <!-- <div class="dash">
-            Insert dashboard stuff here, things needed: <br>
-            1) Welcome user<br>
-            2) recent jobs posted
-        </div> -->
     </main>
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>

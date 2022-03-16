@@ -3,7 +3,7 @@
     session_start();
     if (isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
         $uid = $_SESSION['uid'];
-        $sql = "SELECT * FROM student WHERE StudentID = '$uid'";
+        $sql = "SELECT * FROM application WHERE StudentID = '$uid'";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_assoc($result);
     } else {
@@ -44,7 +44,18 @@
 
     <a href="../testimonial.php">
         <input type="button" class="btn">Click here for testimonial</input>
-    </a>
+    </a><br><br>
+
+    <h4>Application ID: </h4>
+    <?php echo $row['ApplicationID']; ?><br>
+    <h4>Apply Status: </h4>
+    <?php echo $row['ApplyStatus']; ?><br>
+    <h4>Apply Date: </h4>
+    <?php echo $row['ApplyDate']; ?><br>
+    <h4>Job ID:</h4>
+    <?php echo $row['JobID']; ?><br>
+    <h4>Student ID:</h4>
+    <?php echo $row['StudentID']; ?><br>
 
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>

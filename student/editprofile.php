@@ -95,14 +95,6 @@
         </div>
     </div>
 
-    <!-- <div class="imgArea">
-        <h2>Student Profile</h2>
-        <input id="upload-input" type="file" accept="image/gif, image/jpg, image/png" onchange="showImg(this)" multiple />
-            <div style="text-align: top">
-                <label>Upload：</label>
-            </div>
-        <button>Save Edit</button></a> 
-    </div> -->
     <div class="photo">
         <form action = "" method = "post" enctype= "multipart/form-data">
             <?php
@@ -118,7 +110,7 @@
             <div class = "contactpart">
                 <h3>Contact Details</h3>
                 <label>Email: <input size="20" type='text' name='email' id='email' value="<?php echo $row['StudentEmail'] ?>"/></label><br> 
-                <label>Contact Number: <input size="20" type='text' name='contact' id='contact' value="<?php echo $row['StudentContactDetails'] ?>"/></label><br> 
+                <label>Contact Number: <input size="20" type='text' name='contact' id='contact' value="<?php echo $row['StudentContactNumber'] ?>"/></label><br> 
             </div>
 
             <div class = "detailspart">

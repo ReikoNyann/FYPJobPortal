@@ -1,3 +1,11 @@
+<!-- <?php
+    // include '/config.php';
+    // session_start();
+    // $sql = "SELECT * FROM job";
+    // $result = mysqli_query($conn, $sql);
+    // $row = mysqli_fetch_assoc($result);
+?> -->
+
 <!DOCTYPE html>
 <html>
 
@@ -37,6 +45,12 @@
                 <button>Search</button>
             </form>
         </div>
+
+        <!-- <?php
+            // while($res = mysql_fetch_array($row);){
+            //     echo $res['JobType'];
+            // }
+        ?> -->
     </main>
 
     <footer>

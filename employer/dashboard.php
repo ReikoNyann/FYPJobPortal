@@ -1,3 +1,23 @@
+<?php
+    include '../config.php';
+    session_start();
+    if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
+        //echo $_SESSION['uid']; //check userid captured
+        //declare login userid 
+        $uid = $_SESSION['uid'];
+        //get data from table
+        $sql = "SELECT * FROM company WHERE CompanyID = $uid";
+        //connect DB and sql query
+        $result = mysqli_query($conn,$sql);
+        //fetch results 
+        $row = mysqli_fetch_assoc($result);
+        
+    } else{
+        echo 'Failed connecting to database';
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -18,7 +38,7 @@
             <a href="../jobopportunities.php">Job Opportunities</a>
             <a href="../contact.php">Contact Us</a>
             <div class="dropdown">
-                <button class="droplist">USER
+                <button class="droplist"><?php echo $row['PersonInCharge']; ?>
                     <i class="togglelist"></i>
                 </button>
                 <div class="contentlist">
@@ -31,9 +51,9 @@
 
         <br>
 
-        <h2>Welcome, Employer</h2><br><br>
+        <h2>Welcome, <?php echo $row['PersonInCharge']; ?></h2><br><br>
 
-        <button type="button" class="btn">View Application List</button><br><br>
+        <a href="viewapplicant.php">View Application List</a>
 
         <p>Recent offer posted</p>
 
