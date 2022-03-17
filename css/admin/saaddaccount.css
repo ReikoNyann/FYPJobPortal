@@ -76,40 +76,31 @@ body{
     display: block;
 }
 
-.requestsform{
+.addaccountform{
     border-style: solid;
-    border-color: red;
-    text-align: left;
-    height: 350px;
-    width: 250px;
+    border-color: black;
+    text-align: center;
+    height: 500px;
+    width: 800px;
     margin: 20px auto;
     position: relative;
     font-weight: bold;
     font-size: 18px;
-    float: left;
 }
 
-.enquiriesform{
-    border-style: solid;
-    border-color: red;
-    text-align: left;
-    height: 350px;
+input[type=text], [type=email], input[type=password]{
+    padding: 5px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 10px;
     width: 250px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
-    font-size: 18px;
-    float: right;
+    text-align: left;
 }
 
-.button{
+button{
     border-radius: 10px;
     background-color: red;
     color: white;
     font-size: 15px;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
 }
 
 footer{
@@ -122,6 +113,7 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
 
 p{
@@ -137,6 +129,4 @@ footer a{
     text-decoration: none;
     flex: 0 0 auto
 }
-
-
 

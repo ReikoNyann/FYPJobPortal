@@ -20,9 +20,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css/admin/saviewusers.css">
+        <link rel="stylesheet" href="../css/admin/saaddaccount.css">
     <header>
-        <title>Mu2WIL System Admin View Users Page</title>
+        <title>Mu2WIL System Admin Add Account Page</title>
     </header>
     </head>
 <body>
@@ -46,8 +46,23 @@
             </div>
         </div>
 
-        <h2>Welcome, System Admin <?php echo $row["AdminName"] ?></h2><br>
-        <h2>View Users page</h2><br>
+        <!-- <h2>Welcome, System Admin <?php echo $row["AdminName"] ?></h2><br> -->
+        <div class="addaccountform">
+            <h2>Create a new account for new users</h2>
+            <form action="" method="post">
+                <label>Company UEN: <input type="text" name="companyUEN" placeholder="Company UEN"></label><br><br>
+                
+                <label>Company Name: <input type="text" name="companyName" placeholder="Company Name"></label><br><br>
+
+                <label>Email Address: <input type="email" name="email" placeholder="Email Address"></label><br><br>
+                
+                <label>Password: <input type="password" name="password" placeholder="password"></label>
+                <button type="submit" class="btn" name="generatePW">Generate Password</button><br><br>
+
+                <button name="submit" class="btn">Submit</button>
+            </form> 
+        </div>
+        
     </main>
 
     <footer>
@@ -56,5 +71,3 @@
     </footer>
     </body>
 </html>
-
-

@@ -11,11 +11,11 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-    $sql = "SELECT * FROM company WHERE CompanyEmail ='$email' AND CompanyPassword = '$password'";
+    $sql = "SELECT * FROM admin WHERE AdminEmail ='$email' AND AdminPassword = '$password'";
     $result = mysqli_query($conn, $sql);
     if($result-> num_rows > 0){
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['uid'] = $row['CompanyID'];
+        $_SESSION['uid'] = $row['AdminID'];
         header("Location: dashboard.php");
     } else {
         echo "<script>alert('Email or Password is wrong! If you do not have an account, register an account.')</script>";
@@ -28,37 +28,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/css/login.css">
-    <header>
-        <title>Reset Password</title>
-    </header>
-
+        <link rel="stylesheet" href="../css/admin/salogin.css">
+            <header>
+                <title>Mu2WIL System Admin Login Page</title>
+            </header>
     </head>
-
 <body>
     <main>
-    <div class="menu">
-        <div class="murdoch">
-            <a href="../index.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="sadashboard.php"><img src="../img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
 
         <div class="loginform">
-            <h2>MU2WIL LOGIN</h2>
-
+            <h2>MU2WIL STUDENT LOGIN</h2>
             <form action="" method="post">
-            <label>Email: <input type="email" name="email"></label><br>
-            <label>Password: <input type="password" name="password"></label><br>
-            <label class="remember"><input type="checkbox" name="remember" id="remember" >Remember Me</label>
-            <p><a href="/employer/reset.php" class="forget">Forget Password?</a></p>
-            <p class="new">Are you a new employer looking to offer WIL offers? <a href="/employer/register.php">Sign Up</a></p>
-            <button name="submit" class="btn">Login</button>
-        </form> 
+                <label>Email: </label>
+                <input type="email" name="email"><br>
+                <label>Password: </label>
+                <input type="password" name="password"><br>
+                <!-- <p><a href="../resetpassword.php">Forget Password?</a></p>
+                <label><input type="checkbox" name="remember" id="remember">Remember Me</label> -->
+                <button name="submit" class="btn">Login</button>
+            </form> 
         </div>
     </main>
         <footer>
             <p>Copyright 2022, Team Yuen Yuen</p>
-            <a href="#">Contact Us</a>
+            <a href="../contact.php">Contact Us</a>
         </footer>
     </body>
 </html>

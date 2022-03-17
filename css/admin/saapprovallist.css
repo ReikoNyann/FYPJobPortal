@@ -76,33 +76,25 @@ body{
     display: block;
 }
 
-.requestsform{
-    border-style: solid;
-    border-color: red;
-    text-align: left;
-    height: 350px;
-    width: 250px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
-    font-size: 18px;
-    float: left;
+h2{
+    color: #FF0000;
 }
 
-.enquiriesform{
-    border-style: solid;
-    border-color: red;
-    text-align: left;
-    height: 350px;
-    width: 250px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
-    font-size: 18px;
-    float: right;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100px;
+  text-align: center;
 }
 
-.button{
+th, td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 15px;
+  height: 40px;
+}
+
+/* .button{
     border-radius: 10px;
     background-color: red;
     color: white;
@@ -110,7 +102,7 @@ body{
     position: absolute;
     bottom: 0;
     text-align: center;
-}
+} */
 
 footer{
     display: block;

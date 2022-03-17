@@ -76,42 +76,6 @@ body{
     display: block;
 }
 
-.requestsform{
-    border-style: solid;
-    border-color: red;
-    text-align: left;
-    height: 350px;
-    width: 250px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
-    font-size: 18px;
-    float: left;
-}
-
-.enquiriesform{
-    border-style: solid;
-    border-color: red;
-    text-align: left;
-    height: 350px;
-    width: 250px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
-    font-size: 18px;
-    float: right;
-}
-
-.button{
-    border-radius: 10px;
-    background-color: red;
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-}
-
 footer{
     display: block;
     margin: 0%;
