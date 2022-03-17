@@ -1,6 +1,7 @@
 <?php
     include '../config.php';
     session_start();
+
     if (isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
         //declare login userID
         $uid = $_SESSION['uid'];
@@ -13,24 +14,22 @@
     } else {
         echo 'Failed connecting to database';
     }
-    
 ?>
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="../css/main/navbar.css">
-    <link rel="stylesheet" href="../css/student/studentprofile.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/main/navbar.css">
+    <link rel="stylesheet" href="/css/student/studentprofile.css">
     <header>
-        <title>Student View Application Status Page</title>
+        <title>Job Opportunities</title>
     </header>
 </head>
 
 <body>
     <div class="logo">
-        <a href="../index.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
+  
+    <a href="#"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
     </div>
     <div class="navbar">
         <a href="job.php">Job Opportunities</a>
@@ -47,25 +46,20 @@
         </div>
     </div>
 
-    <a href="../testimonial.php">
-        <input type="button" class="btn">Click here for testimonial</input>
-    </a><br><br>
+        <br>
 
-    <h4>Application ID: </h4>
-    <?php echo $row['ApplicationID']; ?><br>
-    <h4>Apply Status: </h4>
-    <?php echo $row['ApplyStatus']; ?><br>
-    <h4>Apply Date: </h4>
-    <?php echo $row['ApplyDate']; ?><br>
-    <h4>Job ID:</h4>
-    <?php echo $row['JobID']; ?><br>
-    <h4>Student ID:</h4>
-    <?php echo $row['StudentID']; ?><br>
+        <div class="jobcontent">
+            <form action="" method="post">
+                <h2>Search jobs that you are interested in</h2><br>
+                 <input type="text" placeholder="Search" />
+                <button>Search</button>
+            </form>
+        </div>
+    </main>
 
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
     </footer>
-
 </body>
 
 </html>

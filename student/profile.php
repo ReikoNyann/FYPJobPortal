@@ -33,7 +33,7 @@
     <a href="#"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
     </div>
     <div class="navbar">
-        <a href="../jobopportunities.php">Job Opportunities</a>
+        <a href="job.php">Job Opportunities</a>
         <a href="../contact.php">Contact Us</a>
         <div class="dropdown">
             <button class="droplist"><?php echo '<span style="font-size:15px; font-family:Segoe UI; font-weight:bold;">' . $row['StudentName'] . '</span>'; ?>
