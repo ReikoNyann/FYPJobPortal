@@ -41,7 +41,7 @@
         $goals = $_POST['goals'];
         $vision = $_POST['vision'];
         $about2 = str_replace("'", "''", $about);
-        $goal2 = str_replace("'", "''", $goals);
+        $goals2 = str_replace("'", "''", $goals);
         $vision2 = str_replace("'", "''", $vision);
         $data = "UPDATE company SET CompanyEmail='$email' ,CompanyAddress='$address' ,CompanyProfile='$about2' ,ContactNumber='$contactno' ,Goals='$goals2' ,Vision='$vision2' WHERE CompanyID ='$uid'";
         $update = mysqli_query($conn, $data);
