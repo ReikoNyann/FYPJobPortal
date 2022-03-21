@@ -37,9 +37,9 @@
                     <i class="togglelist"></i>
                 </button>
                 <div class="contentlist">
-                    <a href="/student/profile.php">View Profile</a>
-                    <a href="/student//application.php">View Applications</a>
-                    <a href="/logout.php">Logout</a>
+                    <a href="profile.php">View Profile</a>
+                    <a href="viewapplication.php">View Applications</a>
+                    <a href="logout.php">Logout</a>
                 </div>
             </div>
         </div>

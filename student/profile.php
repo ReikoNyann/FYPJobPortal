@@ -30,7 +30,7 @@
 <body>
     <div class="logo">
   
-    <a href="#"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
+    <a href="/student/studentdash.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
     </div>
     <div class="navbar">
         <a href="job.php">Job Opportunities</a>
@@ -41,7 +41,7 @@
             </button>
             <div class="contentlist">
                 <a href="profile.php">View Profile</a>
-                <a href="application.php">View Applications</a>
+                <a href="viewapplication.php">View Applications</a>
                 <a href="../logout.php">Logout</a>
             </div>
         </div>
