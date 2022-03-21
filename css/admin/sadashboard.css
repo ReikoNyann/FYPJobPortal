@@ -1,142 +1,74 @@
-body{
-    max-width: 1280px;
-    margin: auto;
-    padding: auto;
-    max-height: auto;
-    position: relative;
-    padding-bottom: 0px; /*58px*/
-    min-height: 100vh;
+.dashboard{
+    margin:10px;
+    justify-content: center;
+    padding-bottom: 20px;
+    justify-content: center;
 }
 
-.logo{
-    display: block;
-    background-color: black;
+.top{
+    margin-left: 30px;
     padding: 10px;
-    height: 70px;
 }
 
-.navbar{
-    display: block;
-    overflow: hidden;
+.applications{
+    background-color: #bfbfbf;
     padding: 10px;
-    margin: -80px 0px 20px 832px;
-    text-align: right;
-}
-
-.navbar a{
-    float: left;
-    font-size: 18px;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown{
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .droplist{
-    font-size:18px;
-    border:none;
-    outline: none;
-    color:white;
-    padding: 14px 16px;
-    background-color: inherit;
-    margin: 0;
-
-}
-
-.navbar a:hover, .dropdown:hover .droplist{
-    background-color: red;
-}
-
-.contentlist{
-    display: none;
-    position: absolute;
-    background-color: grey;
-    min-width:160px;
-    z-index: 1;
-}
-
-.contentlist a{
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.contentlist a:hover{
-    background-color: red;
-}
-
-.dropdown:hover .contentlist{
-    display: block;
-}
-
-.requestsform{
-    border-style: solid;
-    border-color: red;
-    text-align: left;
-    height: 350px;
-    width: 250px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
-    font-size: 18px;
-    float: left;
-}
-
-.enquiriesform{
-    border-style: solid;
-    border-color: red;
-    text-align: left;
-    height: 350px;
-    width: 250px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
-    font-size: 18px;
-    float: right;
-}
-
-.button{
-    border-radius: 10px;
-    background-color: red;
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    bottom: 0;
     text-align: center;
+    box-shadow: -14px 8px 9px 0px #ABA1A0;
+    float: left;
+    width: 550px;
+    font-size: 18px;
+    font-weight: bold;
+
 }
 
-footer{
-    display: block;
-    margin: 0%;
-    padding: 1px 0px 2px 0px;
-    background-color: black;
-    height: 45px;
-    /* position: relative; */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-p{
-    color: white;
+.enquiries{
+    background-color: #bfbfbf;
+    padding: 10px;
     text-align: center;
+    box-shadow: 14px 8px 7px 0px #ABA1A0;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 550px;
+    font-size: 18px;
+    font-weight: bold;
     
 }
 
-footer a{
-    float: right;
-    color: white;
-    margin: -32px 10px 0px 0px;
-    text-decoration: none;
-    flex: 0 0 auto
+.top button{
+    margin-top: 10px;
+    background-color: red;
+    width: 220px;
+    height: 50px;
+    font-weight: bolder;
+    border-radius: 10px;
+
 }
 
 
-
+a{
+    text-decoration: none;
+    color: white;
+}
+.bottom{
+    clear: both;
+    padding: 10px;
+    justify-content: center;
+    margin-left: 50px;
+}
+table{
+    background-color: #f5f2f1;
+    width: 1000px;
+    margin: 50px;
+    padding: 20px;
+    border:1px solid #ccc; 
+    
+    
+}
+td{
+    padding: 5px;
+    text-align: left;
+    padding-left: 80px;
+    
+}

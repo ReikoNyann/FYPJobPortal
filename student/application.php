@@ -13,7 +13,22 @@
     } else {
         echo 'Failed connecting to database';
     }
-    
+    if(isset($_POST['submit'])){
+        $target = '../uploads/student/resume/';
+        $target = $target.basename($_FILES['file']['name']);
+        $studentid = $_POST['studentid'];
+        $jobid = $_POST['jobid'];
+        $resume = ($_FILES['file']['name']);
+        $date = date('Y-m-d');
+        if(move_uploaded_file($_FILES['file']['tmp_name'], $target)){
+            $insertdata = "INSERT INTO application ( ApplyDate, ApplyStatus, AttachResume, JobID, StudentID) VALUES ('$date','Pending','$resume','$jobid', '$studentid') ";
+            $applicationdata = mysqli_query($conn, $insertdata);
+            echo '<script>alert("Resume have been sent. Please wait to be contacted by the employer.")
+            location="viewapplication.php"</script>';
+        }else{
+            echo '<script>alert("Error sending resume");</script>';
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -41,26 +56,24 @@
             </button>
             <div class="contentlist">
                 <a href="profile.php">View Profile</a>
-                <a href="application.php">View Applications</a>
+                <a href="viewapplication.php">View Applications</a>
                 <a href="../logout.php">Logout</a>
             </div>
         </div>
     </div>
 
-    <a href="../testimonial.php">
-        <input type="button" class="btn">Click here for testimonial</input>
-    </a><br><br>
-
-    <h4>Application ID: </h4>
-    <?php echo $row['ApplicationID']; ?><br>
-    <h4>Apply Status: </h4>
-    <?php echo $row['ApplyStatus']; ?><br>
-    <h4>Apply Date: </h4>
-    <?php echo $row['ApplyDate']; ?><br>
-    <h4>Job ID:</h4>
-    <?php echo $row['JobID']; ?><br>
-    <h4>Student ID:</h4>
-    <?php echo $row['StudentID']; ?><br>
+    
+    <div class="applyform">
+        <form action="" method="post" enctype="multipart/form-data">
+        <label><b>Upload Resume</b></label><br>
+        <input type="file" name="file"><br>
+        <label><b>Apply Date:</b></label><br>
+        <input type="date" name="adate" value="<?php echo date('Y-m-d'); ?>" disabled><br>
+        <input type="hidden" name="studentid" value="<?php echo $row['StudentID']; ?>"><br>
+        <input type="hidden" name="jobid" value="<?php echo $_REQUEST['apply']; ?>"><br>
+        <input type="submit" name="submit" value="Submit Resume">
+        </form>
+    </div>
 
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>

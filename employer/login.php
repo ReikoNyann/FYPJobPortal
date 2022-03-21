@@ -31,7 +31,7 @@
         <link rel="stylesheet" href="/css/main/login.css">
         <link rel="stylesheet" href="/css/employer/employer.css">
     <header>
-        <title>Reset Password</title>
+        <title>MU2WIL Employer Login Page</title>
     </header>
 
     </head>
@@ -45,16 +45,17 @@
     </div>
 
         <div class="loginform">
-            <h2>MU2WIL LOGIN</h2>
+            <h2>MU2WIL EMPLOYER LOGIN</h2>
 
             <form action="" method="post">
-            <label>Email: <input type="email" name="email"></label><br>
-            <label>Password: <input type="password" name="password"></label><br>
-            <label class="remember"><input type="checkbox" name="remember" id="remember" >Remember Me</label>
-            <p><a href="/employer/reset.php" class="forget">Forget Password?</a></p>
-            <p class="new">Are you a new employer looking to offer WIL offers? <a href="/employer/register.php">Sign Up</a></p>
+            <label>Email: <br><input type="email" name="email"></label><br>
+            <label>Password: <br><input type="password" name="password"></label><br>
+            <label class="remember"><input type="checkbox" name="remember" id="remember" >Remember Me</label><br>
+            <p class="preset"><a href="/employer/reset.php" class="forget">Forget Password?</a></p><br>
             <button name="submit" class="btn">Login</button>
-        </form> 
+        </form>
+        <br>
+        <p class="new">Are you a new employer looking to offer WIL offers?<br><a href="/employer/register.php"> Sign Up Here</a></p><br> 
         </div>
     </main>
         <footer>

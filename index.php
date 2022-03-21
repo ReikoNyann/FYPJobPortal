@@ -28,7 +28,6 @@
     </main>
         <footer>
             <p>Copyright 2022, Team Yuen Yuen</p>
-            <a href="#">Contact Us</a>
         </footer>
     </body>
 </html>

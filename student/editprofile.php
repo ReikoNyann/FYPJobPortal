@@ -84,7 +84,7 @@
             </button>
             <div class="contentlist">
                 <a href="profile.php">View Profile</a>
-                <a href="application.php">View Applications</a>
+                <a href="viewapplication.php">View Applications</a>
                 <a href="../logout.php">Logout</a>
             </div>
         </div>
