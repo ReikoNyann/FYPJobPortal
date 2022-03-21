@@ -10,8 +10,6 @@
        $uen =  $_POST['uen'];
        $intro =  $_POST['intro'];
        $status = 'Pending';
-       
-
        $sql = "INSERT INTO company (CompanyUEN, CompanyName, CompanyEmail, CompanyPassword, PersonInCharge, CompanyProfile, ApprovalStatus) VALUES ('$uen', '$company', '$email', '$pass', '$name', '$intro', '$status')";
        $result = mysqli_query($conn, $sql);
        if($result){
