@@ -1,26 +1,26 @@
 <?php 
-   include '../config.php';
-   session_start(); 
+    include '../config.php';
+    session_start(); 
 
-   if(isset($_POST['submit'])){
-       $name = $_POST['cname'];
-       $email =  $_POST['email'];
-       $pass = $_POST['cpass'];
-       $company =  $_POST['cname'];
-       $uen =  $_POST['uen'];
-       $intro =  $_POST['intro'];
-       $status = 'Pending';
-       
+    if(isset($_POST['submit'])){
+        $name = $_POST['cname'];
+        $email =  $_POST['email'];
+        $pass = $_POST['cpass'];
+        $company =  $_POST['cname'];
+        $uen =  $_POST['uen'];
+        $intro =  $_POST['intro'];
+        $status = 'Pending';
 
-       $sql = "INSERT INTO company (CompanyUEN, CompanyName, CompanyEmail, CompanyPassword, PersonInCharge, CompanyProfile, ApprovalStatus) VALUES ('$uen', '$company', '$email', '$pass', '$name', '$intro', '$status')";
-       $result = mysqli_query($conn, $sql);
-       if($result){
+
+        $sql = "INSERT INTO company (CompanyUEN, CompanyName, CompanyEmail, CompanyPassword, PersonInCharge, CompanyProfile, ApprovalStatus) VALUES ('$uen', '$company', '$email', '$pass', '$name', '$intro', '$status')";
+        $result = mysqli_query($conn, $sql);
+        if($result){
             echo "<script>alert('You are registered successfully! Please wait for approval in 1-3 working days')</script>";
             header("Location: login.php");
         }else{
             echo "<script>alert('Error 404')</script>";
         }
-   }
+    }
 ?>
 
 <!DOCTYPE html>

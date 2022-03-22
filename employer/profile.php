@@ -22,8 +22,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/css/employer/employerdash.css">
-    <link rel="stylesheet" href="/css/employer/employerprofile.css">
+    <link rel="stylesheet" href="../css/employer/employerdash.css">
+    <link rel="stylesheet" href="../css/employer/employerprofile.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <header>
         <title>Employer Profile Page</title>
@@ -32,19 +32,20 @@
 
 <body>
     <div class="logo">
-            <a href="/employer/dashboard.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
+            <a href="dashboard.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
         </div>
         <div class="navbar">
-            <a href="/jobopportunities.php">Job Opportunities</a>
-            <a href="/contact.php">Contact Us</a>
+            <a href="../jobopportunities.php">Job Opportunities</a>
+            <a href="../contact.php">Contact Us</a>
             <div class="dropdown">
                 <button class="droplist"><?php echo $row['PersonInCharge']; ?>
                     <i class="togglelist"></i>
                 </button>
                 <div class="contentlist">
-                    <a href="/employer/profile.php">View Profile</a>
-                    <a href="/employer/viewapplicant.php">View Applicants</a>
-                    <a href="/logout.php">Logout</a>
+                    <a href="profile.php">View Profile</a>
+                    <a href="addNewJob.php">Add New Job</a>
+                    <a href="viewapplicant.php">View Applicants</a>
+                    <a href="../logout.php">Logout</a>
                 </div>
             </div>
         </div>
@@ -57,10 +58,10 @@
                         //check if logo is uploaded into database
                         if ($row['CompanyLogo'] == NULL){
                             //if no logo display
-                            echo '<img width ="200px" height="auto" src="/img/imageplaceholder.jpg" placeholder="company logo here">';
+                            echo '<img width ="200px" height="auto" src="../img/imageplaceholder.jpg" placeholder="company logo here">';
                             
                         }else{
-                            echo '<img width="250px" height="250px" src="/uploads/employer'.$row['CompanyLogo'].'">';
+                            echo '<img width="250px" height="250px" src="../uploads/employer'.$row['CompanyLogo'].'">';
                         }
                     ?>
                 </div>
@@ -72,7 +73,7 @@
             </div>
             <div class ="companyinfo">
                 <div class="editbutton">
-                <button type="button" class="editbtn"><a href="/employer/employeredit.php">Edit Profile</a></button>
+                <button type="button" class="editbtn"><a href="employeredit.php">Edit Profile</a></button>
                 </div>
                 <h3>About</h3>
                 <p><?php echo $row['CompanyProfile']?></p>
