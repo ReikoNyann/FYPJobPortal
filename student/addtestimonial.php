@@ -15,6 +15,24 @@
         echo 'Failed connecting to database';
     }
 
+    if(isset($_POST['submit'])){
+        $target = '../uploads/testimonials/';
+        $target = $target.basename($_FILES['img']['name']);
+        $pic = ($_FILES['img']['name']);
+        $position = $_POST['position'];
+        $comment = $_POST['comment'];
+        $companyid = $_POST['companyid'];
+        $studentid = $_POST['studentid'];
+        $date = date('Y-m-d');
+        if(move_uploaded_file($_FILES['img']['tmp_name'], $target)){
+            $inserttest = "INSERT INTO testimonial ( TestimonialTitle, TestimonialPhoto, TestimonialComment, CompanyID, StudentID) VALUES ('$position', '$pic', '$comment', '$companyid', '$studentid') ";
+            $testimonial = mysqli_query($conn, $inserttest);
+            echo '<script>alert("Testimonial has been sent")
+            location="'.$_SERVER['HTTP_REFERER'].'"</script>';
+        }else{
+            echo '<script>alert("Error sending testimonial");</script>';
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -46,21 +64,23 @@
         </div>
         
         <div class="addform">
-        <form action="" method="post">
-            <?php 
+        <?php 
                 $cid = $_REQUEST['testimonial'];
                 $cname = "SELECT CompanyName FROM company WHERE CompanyID = $cid";
                 $getname = mysqli_query($conn, $cname);
                 $row = mysqli_fetch_assoc($getname);
             ?>
+        <form action="" method="post" enctype="multipart/form-data">
                 <h2>Submission of Testimonial for <?php echo $row['CompanyName'];?></h2>
                 <label>Enter your Job Position: </label><br>
                 <input type="text" name="position" placeholder="Job Position"><br>
                 <label>Comment: </label><br>
-                <input type="text" name="comment" placeholder="Comment"><br>
+                <textarea name="comment" rows="6" placeholder="Comment"></textarea><br>
                 <label>Upload an image (optional): </label><br>
-                <input type="file" name="file"><br>
-                <button name="submit" name="submit">Submit</button>
+                <input type="file" name="img"><br>
+                <input type ="hidden" name="studentid" value="<?php echo $uid; ?>">
+                <input type="hidden" name="companyid" value="<?php echo $cid; ?>">
+                <input type="submit" name="submit" value="Submit Testimonial">
             </form>
         </div>
     </main>
