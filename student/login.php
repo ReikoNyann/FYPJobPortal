@@ -29,6 +29,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="/css/main/login.css">
+        <link rel="stylesheet" href="/css/student/login.css">
     <header>
         <title>Welcome to Mu2WIL</title>
     </header>
@@ -43,12 +44,12 @@
         </div>
     </div>
         <div class="loginform">
-            <h2>MU2WIL LOGIN</h2>
+            <h2>MU2WIL STUDENT LOGIN</h2>
             <form action="" method="post">
-            <label>Email: <input type="email" name="email"></label><br>
-            <label>Password: <input type="password" name="password"></label><br>
-            <p><a href="/reset.php">Forget Password?</a></p>
+            <label>Email: <br><input type="email" name="email"></label><br>
+            <label>Password: <br><input type="password" name="password"></label><br>
             <label><input type="checkbox" name="remember" id="remember">Remember Me</label>
+            <p><a href="/reset.php">Forget Password?</a></p>
             <button name="submit" class="btn">Login</button>
         </form> 
         </div>

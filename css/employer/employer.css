@@ -2,45 +2,60 @@
     border-style: solid;
     border-color: red;
     text-align: center;
-    height: 350px;
-    width: 420px;
+    height: 500px;
+    width: 600px;
     margin: 20px auto;
     position: relative;
     font-weight: bold;
     font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 label{
     display: block;
     padding: 5px;
+    text-align: left;
+    margin-left: 160px;
 }
 input[type=email], input[type=password]{
     padding: 5px;
     box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
     border-radius: 10px;
+    width: 250px;
+    height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .remember{
     float: left;
-    margin-left: 60px;
+    margin-left: 160px;
+    margin-bottom: 20px;
 }
-.forget{
-    float: right;
-    margin-right: 50px;
-    margin-top: -13px;
-    
+.preset {
+    clear: both;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 120px;
 }
-
 .new{
     clear: both;
     color: black;
-    margin: 20px;
+    margin-left: 100px;
     text-align: left;
+    margin-top: -20px;
 }
 
 button{
     border-radius: 10px;
     background-color: red;
     color: white;
-    font-size: 16px;
     float: right;
-    margin-right: 20px;
+    margin-right: 120px;
+    width: 130px;
+    height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -70px;
+}
+p a{
+    text-decoration: none;
 }

@@ -35,30 +35,24 @@
     </head>
 <body>
     <main>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="sadashboard.php"><img src="../img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a></li>
-                </ul>
-            </nav>
+    <div class="menu">
+        <div class="murdoch">
+            <a href="../index.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo" class="logo"></a>
         </div>
-
-        <div class="loginform">
-            <h2>MU2WIL STUDENT LOGIN</h2>
+    </div>
+    <div class="loginform">
+            <h2>MU2WIL ADMINISTRATION LOGIN</h2>
             <form action="" method="post">
-                <label>Email: </label>
-                <input type="email" name="email"><br>
-                <label>Password: </label>
-                <input type="password" name="password"><br>
-                <!-- <p><a href="../resetpassword.php">Forget Password?</a></p>
-                <label><input type="checkbox" name="remember" id="remember">Remember Me</label> -->
-                <button name="submit" class="btn">Login</button>
-            </form> 
+            <label>Email: <br><input type="email" name="email"></label><br>
+            <label>Password: <br><input type="password" name="password"></label><br>
+            <label><input type="checkbox" name="remember" id="remember">Remember Me</label>
+            <p><a href="/reset.php">Forget Password?</a></p>
+            <button name="submit" class="btn">Login</button>
+        </form> 
         </div>
     </main>
         <footer>
             <p>Copyright 2022, Team Yuen Yuen</p>
-            <a href="../contact.php">Contact Us</a>
         </footer>
     </body>
 </html>
