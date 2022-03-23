@@ -1,6 +1,7 @@
 <?php 
-   include '../config.php';
-   session_start(); 
+    include '../config.php';
+    session_start(); 
+
 
    if(isset($_POST['submit'])){
        $name = $_POST['cname'];
@@ -18,7 +19,7 @@
         }else{
             echo "<script>alert('Error 404')</script>";
         }
-   }
+    }
 ?>
 
 <!DOCTYPE html>

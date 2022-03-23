@@ -21,7 +21,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/css/employer/employerdash.css">
+    <link rel="stylesheet" href="../css/employer/employerdash.css">
     <header>
         <title>Mu2WIL Employer Dashboard Page</title>
     </header>
@@ -30,19 +30,20 @@
 <body>
     <main>
     <div class="logo">
-            <a href="/employer/dashboard.php"><img width="250px" src="/img/Murdoch_University_extended_logo.png" alt="logo"></a>
+            <a href="dashboard.php"><img width="250px" src="../img/Murdoch_University_extended_logo.png" alt="logo"></a>
         </div>
         <div class="navbar">
-            <a href="/jobopportunities.php">Job Opportunities</a>
-            <a href="/contact.php">Contact Us</a>
+            <a href="../jobopportunities.php">Job Opportunities</a>
+            <a href="../contact.php">Contact Us</a>
             <div class="dropdown">
                 <button class="droplist"><?php echo $row['PersonInCharge']; ?>
                     <i class="togglelist"></i>
                 </button>
                 <div class="contentlist">
-                    <a href="/employer/profile.php">View Profile</a>
-                    <a href="/employer/viewapplicant.php">View Applicants</a>
-                    <a href="/logout.php">Logout</a>
+                    <a href="profile.php">View Profile</a>
+                    <a href="addNewJob.php">Add New Job</a>
+                    <a href="viewapplicant.php">View Applicants</a>
+                    <a href="../logout.php">Logout</a>
                 </div>
             </div>
         </div>
@@ -57,7 +58,7 @@
 
     <footer>
         <p>Copyright 2022, Team Yuen Yuen</p>
-        <a href="#">Contact Us</a>
+        <a href="../contact.php">Contact Us</a>
     </footer>
 </body>
 
