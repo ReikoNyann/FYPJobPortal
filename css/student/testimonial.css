@@ -1,0 +1,33 @@
+.testimoniallist{
+    margin: 10px;
+    padding: 10px;
+
+}
+h2{
+    color: #e82b49;
+}
+.tleft{
+    float: left;
+}
+.tright{
+    float: left;
+    margin-left: 600px;
+    margin-top:-50px;
+}
+.add{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #e82b49;
+    font-size: 15px;
+}
+.addform{
+    clear: both;
+    background-color: rgb(233, 233, 233);
+    border-color: #e82b49;
+    border-style: solid;
+    padding: 20px;
+    margin: 20px;
+}
