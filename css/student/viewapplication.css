@@ -1,0 +1,23 @@
+h2, th{
+    color: #e82b49;  
+}
+th{
+    font-weight: bold;
+}
+input[type=submit]{
+    background-color: #e82b49;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.applicationsent{
+    padding: 5px;
+    margin-left: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+td{
+    padding:20px;
+}

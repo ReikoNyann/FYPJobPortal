@@ -1,18 +1,23 @@
 .testimoniallist{
     margin: 10px;
     padding: 10px;
+    
 
 }
 h2{
     color: #e82b49;
 }
 .tleft{
+    border-style: solid;
+    border-color: #e82b49;
+    padding:20px;
+    width: 80%;
     float: left;
 }
 .tright{
-    float: left;
-    margin-left: 600px;
-    margin-top:-50px;
+    margin-right: 50px;
+    margin-top: -3700px;
+    float: right;
 }
 .add{
     width: 250px;
@@ -25,9 +30,29 @@ h2{
 }
 .addform{
     clear: both;
-    background-color: rgb(233, 233, 233);
     border-color: #e82b49;
     border-style: solid;
     padding: 20px;
     margin: 20px;
+}
+input[type=text]{
+    width: 600px;
+    height: 30px;
+}
+input[type=submit]{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e82b49;
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 650px;
+    margin-top: -50px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+}
+textarea{
+    width: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

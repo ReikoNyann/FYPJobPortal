@@ -1,0 +1,18 @@
+h2{
+    color: #e82b49;
+}
+.applyform{
+    margin-left: 500px;
+    padding-bottom: 30px;
+}
+
+input[type=submit]{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e82b49;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+}

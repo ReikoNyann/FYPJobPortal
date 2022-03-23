@@ -34,6 +34,7 @@
 
 <head>
     <link rel="stylesheet" href="/css/main/navbar.css">
+    <link rel="stylesheet" href="/css/main/contact.css".
     <header>
         <title>Mu2WIL Contact Us Page</title>
     </header>
@@ -60,26 +61,26 @@
         </div>
     </div>
 
-        <br>
+        
+
+        <div class="contactusform">
         <h2>CONTACT US</h2><br>
         <h3>Enquiries will take 1-3 working days to be answered. Kindly select the right category for the
             enquiry that you are looking to make. Responds will be email linked to the account.
         </h3>
-
-        <div class="contractusform">
             <form action="" method="post">
                 <h3>ENQUIRIES FORM</h3>
-                <label>What are you enquiring about?</label><br>
+                <label><b>What are you enquiring about?</b></label><br>
                 <select name="enquirytype" id="enquirytype">
                     <option value="">--Select type of enquiry--</option>
                     <option value="General">General</option>
                     <option value="Technical">Technical</option>
-                </select><br>
-                <label>Type in your enquiries here:</label><br>
+                </select><br><br>
+                <label><b>Type in your enquiries here:</b></label><br>
                 <textarea name="details" rows ="6" ></textarea><br>
                 <input type="hidden" name="date" value="<?php echo date('Y-m-d'); ?>" disabled>
-                <input type="hidden" name="studentid" value="<?php echo $row['StudentID']; ?>">
-                <button name="submit" name="submit">Submit Enquiries</button>
+                <input type="hidden" name="studentid" value="<?php echo $row['StudentID']; ?>"><br>
+                <input type="submit" name="submit" value="Submit Enquiries">
             </form>
         </div>
     </main>

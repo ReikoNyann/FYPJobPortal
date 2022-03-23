@@ -43,7 +43,7 @@ li{
 }
 
 .navbar a:hover{
-    background-color: red;
+    background-color: #e82b49;
 }
 .murdoch{
     margin: 10px;
@@ -54,7 +54,7 @@ li{
 
 .loginform{
     border-style: solid;
-    border-color: red;
+    border-color: #e82b49;
     text-align: center;
     height: 400px;
     width: 600px;
@@ -80,7 +80,7 @@ input[type=email], input[type=password]{
 }
 button{
     border-radius: 10px;
-    background-color: red;
+    background-color: #e82b49;
     color: white;
     width: 130px;
     height: 40px;

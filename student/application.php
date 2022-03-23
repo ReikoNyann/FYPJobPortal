@@ -36,7 +36,7 @@
 
 <head>
     <link rel="stylesheet" href="../css/main/navbar.css">
-    <link rel="stylesheet" href="../css/student/studentprofile.css">
+    <link rel="stylesheet" href="../css/student/apply.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <header>
         <title>Student View Application Status Page</title>
@@ -65,12 +65,13 @@
     
     <div class="applyform">
         <form action="" method="post" enctype="multipart/form-data">
+        <h2>Application Form</h2>
         <label><b>Upload Resume</b></label><br>
         <input type="file" name="file"><br>
         <label><b>Apply Date:</b></label><br>
-        <input type="date" name="adate" value="<?php echo date('Y-m-d'); ?>" disabled><br>
-        <input type="hidden" name="studentid" value="<?php echo $row['StudentID']; ?>"><br>
-        <input type="hidden" name="jobid" value="<?php echo $_REQUEST['apply']; ?>"><br>
+        <input type="date" name="adate" value="<?php echo date('Y-m-d'); ?>" disabled><br><br>
+        <input type="hidden" name="studentid" value="<?php echo $row['StudentID']; ?>">
+        <input type="hidden" name="jobid" value="<?php echo $_REQUEST['apply']; ?>">
         <input type="submit" name="submit" value="Submit Resume">
         </form>
     </div>

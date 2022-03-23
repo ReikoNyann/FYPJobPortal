@@ -22,7 +22,7 @@
 
 <head>
     <link rel="stylesheet" href="/css/main/navbar.css">
-    <link rel="stylesheet" href="/css/student/studentprofile.css">
+    <link rel="stylesheet" href="/css/student/viewjob.css">
     <header>
         <title>Job Opportunities</title>
     </header>
@@ -78,7 +78,7 @@
             <div class="dates">
                 <p>Posted On: <?php echo $row['JobPostDate']; ?></p>
                 <p>Close On: <?php echo $row['JobCloseDate']; ?></p>
-                <p id="salary">$<?php echo $row['JobSalary']; ?></p>
+                <p id="salary">Salary: $<?php echo $row['JobSalary']; ?></p>
             </div>
         </div>
         <div class="roles">

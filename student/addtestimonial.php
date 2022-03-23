@@ -72,11 +72,11 @@
             ?>
         <form action="" method="post" enctype="multipart/form-data">
                 <h2>Submission of Testimonial for <?php echo $row['CompanyName'];?></h2>
-                <label>Enter your Job Position: </label><br>
+                <label><b>Enter your Job Position:</b> </label><br>
                 <input type="text" name="position" placeholder="Job Position"><br>
-                <label>Comment: </label><br>
+                <label><b>Comment:</b> </label><br>
                 <textarea name="comment" rows="6" placeholder="Comment"></textarea><br>
-                <label>Upload an image (optional): </label><br>
+                <label><b>Upload an image (optional):</b> </label><br>
                 <input type="file" name="img"><br>
                 <input type ="hidden" name="studentid" value="<?php echo $uid; ?>">
                 <input type="hidden" name="companyid" value="<?php echo $cid; ?>">

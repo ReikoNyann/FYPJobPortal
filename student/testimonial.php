@@ -57,21 +57,28 @@
         <div class="testimoniallist">
             
             <h2><?php echo $row['CompanyName']; ?>'s Testimonial Page</h2>
-            <div class="tleft">
+            
                 <?php 
                     $testlist = mysqli_query($conn, $testimonial);
                     while($row = mysqli_fetch_array($testlist,MYSQLI_ASSOC)){
                     if($row['TestimonialPhoto'] == NULL){
-                        echo "no photo";
-                    }else{
-                        echo "yes photo";
-                    }
+                        echo "<div class='tleft'>";
                         echo "<h4>".$row['TestimonialTitle']."</h4>";
                         echo "<h5>".$row['StudentName']."</h5>";
                         echo "<p>".$row['TestimonialComment']."</p>";
+                        echo "</div>";
+                    }else{
+                        echo "<div class='tleft'>";
+                        echo "<img width = '250px' height='250px' src='../uploads/testimonials/'".$row['TestimonialPhoto'].">";
+                        echo "<h4>".$row['TestimonialTitle']."</h4>";
+                        echo "<h5>".$row['StudentName']."</h5>";
+                        echo "<p>".$row['TestimonialComment']."</p>";
+                        echo "</div>";
+                        
+                    }
                     }
                 ?>
-            </div>
+            
             <div class="tright">
             
             <?php 
