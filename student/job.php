@@ -28,7 +28,7 @@
 
 <head>
     <link rel="stylesheet" href="/css/main/navbar.css">
-    <link rel="stylesheet" href="/css/student/studentprofile.css">
+    <link rel="stylesheet" href="/css/student/job.css">
     <header>
         <title>Job Opportunities</title>
     </header>
@@ -103,7 +103,7 @@
                             while($row = mysqli_fetch_array($search,MYSQLI_ASSOC)){
                                 $jid = $row['JobID'];
                                 echo '<tr><td>';
-                                echo $row['JobTitle']."<br>";
+                                echo "<b>".$row['JobTitle']."</b><br>";
                                 echo $row['JobType']."<br>";
                                 echo "Job Posted on: ".$row['JobPostDate']."<br>";
                                 echo "Close Date: ".$row['JobCloseDate']."<br>";
@@ -117,7 +117,7 @@
                             $search = mysqli_query($conn, $industry);
                             while($row = mysqli_fetch_array($search,MYSQLI_ASSOC)){
                                 echo '<tr><td>';
-                                echo $row['JobTitle']."<br>";
+                                echo "<b>".$row['JobTitle']."</b><br>";
                                 echo $row['JobType']."<br>";
                                 echo "Job Posted on: ".$row['JobPostDate']."<br>";
                                 echo "Close Date: ".$row['JobCloseDate']."<br>";

@@ -15,11 +15,11 @@
 }
 
 h2, h3{
-    color:red;
+    color:#e82b49;
 }
 .editbtn{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: red;
+    background-color: #e82b49;
     color: white;
     font-weight: bold;
     float: right;

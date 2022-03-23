@@ -1,0 +1,48 @@
+.jobcontent{
+    margin: 10px;
+    padding: 10px;
+    margin-top: -50px;
+}
+h2, h3{
+    color: #e82b49;
+}
+.searchjobs{
+    margin-left:  250px;
+}
+select{
+    width: 600px;
+    height: 30px;
+}
+.filter, .clear{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e82b49;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.filterlist{
+    margin-left: 250px;
+}
+input[type=submit]{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e82b49;
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 650px;
+    margin-top: -50px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+}
+
+td{
+    border-style: solid;
+    border-color: #e82b49;
+    padding:20px;
+}

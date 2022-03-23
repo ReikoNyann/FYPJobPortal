@@ -1,97 +1,27 @@
-body{
-    max-width: 1280px;
-    margin: auto;
-    padding: auto;
-    max-height: auto;
-    position: relative;
-    padding-bottom: 0px; /*58px*/
-    min-height: 100vh;
+h2, h3{
+    color: #e82b49;
 }
-
-.navbar{
-    background-color: black;   
-}
-
-h2{
-    color: red;
-    margin: 0 auto;
-    text-align: center;
-}
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    display: inline;
-    padding: 10px;
-}
-
-a{
+input[type=submit]{
+    background-color: #e82b49;
     color: white;
-    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bolder;
 }
-
-img{
-    width: 250px;
-    height:auto;
+.contactusform{
+    margin:20px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.contractusform{
-    border-style: solid;
-    border-color: red;
-    text-align: center;
-    height: 400px;
-    width: 1200px;
-    margin: 20px auto;
-    position: relative;
-    font-weight: bold;
+label{
     font-size: 18px;
 }
-
-label{
-    display: block;
-    padding: 5px;
-    float: left;
-}_
-
-input[type=text], input[type=text]{
-    padding: 5px;
-    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
-    border-radius: 10px;
-    width: 500px; 
-}
-
-button{
-    border-radius: 10px;
-    background-color: red;
-    color: white;
+select{
+    width: 400px;
+    height: 30px;
     font-size: 15px;
 }
-
-footer{
-    display: block;
-    margin: 0%;
-    padding: 1px 0px 2px 0px;
-    background-color: black;
-    height: 45px;
-    /* position: relative; */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-p{
-    color: white;
-    text-align: center;
-    
-}
-
-footer a{
-    float: right;
-    color: white;
-    margin: -32px 10px 0px 0px;
-    text-decoration: none;
-    flex: 0 0 auto
+textarea{
+    width: 450px;
 }

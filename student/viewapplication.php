@@ -21,7 +21,7 @@
 
 <head>
     <link rel="stylesheet" href="../css/main/navbar.css">
-    <link rel="stylesheet" href="../css/student/studentprofile.css">
+    <link rel="stylesheet" href="../css/student/viewapplication.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <header>
         <title>Student View Application Status Page</title>

@@ -27,12 +27,12 @@ textarea{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h3{
-    color: red;
+    color: #e82b49;
 }
 
 .upload{
     color: white;
-    background-color: red;
+    background-color: #e82b49;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -43,7 +43,7 @@ h3{
     margin-top: -30px;
     margin-right: 50px;
     color: white;
-    background-color: red;
+    background-color: #e82b49;
     border-radius: 5px;
     font-size: 15px;
     width: 150px;

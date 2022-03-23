@@ -1,0 +1,58 @@
+.jobdetails{
+    margin:10px;
+    padding: 10px;
+}
+h2, h3, h4{
+    color: #e82b49;
+}
+.topleft{
+    float: left;
+    margin-right: 20px;
+}
+.roles{
+    clear: both;
+    width: 50%;
+    padding-top: 20px;
+}
+
+.topright{
+    float: left;
+    margin-left: 200px;
+    margin-top:50px
+}
+.topright input[type=submit]{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e82b49;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+}
+.companydetails{
+    border-style: solid;
+    border-color: #e82b49;
+    padding: 30px;
+    float: right;
+    width: 30%;
+    margin-top: -620px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.companydetails input[type=submit]{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e82b49;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+}
+.companydetails form{
+    padding-top:20px;
+}
+img{
+    margin-left: 60px;
+}

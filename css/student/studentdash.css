@@ -37,7 +37,7 @@ body{
 }
 
 .navbar a:hover, .dropdown:hover .droplist{
-    background-color: red;
+    background-color: #e82b49;
 }
 
 .contentlist{
@@ -58,7 +58,7 @@ body{
 }
 
 .contentlist a:hover{
-    background-color: red;
+    background-color: #e82b49;
 }
 
 .dropdown:hover .contentlist{

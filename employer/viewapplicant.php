@@ -40,13 +40,6 @@
             </nav>
         </div>
 
-        <!-- <div class="applicationform">
-            <h2>Application Details</h2>
-            <form action="" method="post">
-                <button name="submit" class="btn">View Application</button>
-            </form>
-        </div> -->
-
         <h4>Application ID: </h4>
         <?php echo $row['ApplicationID']; ?><br />
         <h4>Apply Date: </h4>

@@ -35,7 +35,7 @@ img{
 
 .testimonialform{
     border-style: solid;
-    border-color: red;
+    border-color: #e82b49;
     text-align: center;
     height: 500px;
     width: 500px;
@@ -58,7 +58,7 @@ input[type=text]{
 
 button{
     border-radius: 10px;
-    background-color: red;
+    background-color: #e82b49;
     color: white;
     font-size: 15px;
 }
