@@ -83,7 +83,9 @@
                 <th>Student Contact Number</th>
 	        </tr>
 	        <?php
-            $sql = "SELECT * FROM ((application INNER JOIN student ON application.StudentID = student.StudentID) INNER JOIN job ON application.JobID = job.JobID)";
+            //$sql = "SELECT * FROM ((application INNER JOIN student ON application.StudentID = student.StudentID) INNER JOIN job ON application.JobID = job.JobID)";
+            //$sql = "SELECT job.JobTitle, job.JobType, job.JobType, job.JobLocation, application.*, company.CompanyName FROM ((job INNER JOIN application on job.JobID = application.JobID) INNER JOIN company on job.CompanyID = company.CompanyID) WHERE application.CompanyID = '$uid'";
+            $sql = "SELECT job.JobTitle, job.JobType, job.JobType, job.JobLocation, student.*, application.*, company.CompanyName FROM (((job INNER JOIN application on job.JobID = application.JobID) INNER JOIN company on job.CompanyID = company.CompanyID) INNER JOIN student on application.StudentID = student.StudentID) WHERE application.CompanyID = '$uid'";
             $r = mysqli_query($conn,$sql);
 	        while($row=mysqli_fetch_assoc($r)){
             ?>
