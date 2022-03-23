@@ -77,7 +77,7 @@
     </div>
     <div class="navbar">
         <a href="job.php">Job Opportunities</a>
-        <a href="../contact.php">Contact Us</a>
+        <a href="contact.php">Contact Us</a>
         <div class="dropdown">
             <button class="droplist"><?php echo '<span style="font-size:15px; font-family:Segoe UI; font-weight:bold;">' . $row['StudentName'] . '</span>'; ?>
                 <i class="togglelist"></i>

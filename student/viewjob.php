@@ -35,7 +35,7 @@
     </div>
     <div class="navbar">
         <a href="job.php">Job Opportunities</a>
-        <a href="../contact.php">Contact Us</a>
+        <a href="contact.php">Contact Us</a>
         <div class="dropdown">
             <button class="droplist"><?php echo '<span style="font-size:15px; font-family:Segoe UI; font-weight:bold;">' . $row['StudentName'] . '</span>'; ?>
                 <i class="togglelist"></i>
@@ -99,8 +99,8 @@
             <?php echo $row['CompanyProfile']; ?>
             <div class="testimonial">
             <?php 
-                echo '<form action="application.php?id=">';
-                echo '<input type="hidden" name="testimonial" value="'.$jid.'">';
+                echo '<form action="testimonial.php?id=">';
+                echo '<input type="hidden" name="testimonial" value="'.$row['CompanyID'].'">';
                 echo '<input type="submit" value="Click here for Testimonial">';
                 echo '</form>';
             ?>
